@@ -1,0 +1,727 @@
+{
+ "run": "v2__alips_la0",
+ "dir": "$WORK/runs/v2/out_alips_la0",
+ "made": "2026-11-13 06:11:41",
+ "sync_box": "mp",
+ "inputs": "ROOT/data/clips",
+ "secs_metrics": 0.9,
+ "secs_total": 76.9,
+ "mean": {
+  "n_clips": 12,
+  "n_failed": 0,
+  "syncnet": {
+   "lse_c": 2.6379,
+   "lse_d": 10.6087,
+   "offset_frames": 0.5833,
+   "abs_offset_frames": 0.5833,
+   "lse_d_at0": 10.7638
+  },
+  "landmarks": {
+   "face_nme": 2.4435,
+   "mouth_nme": 2.9572,
+   "pose_err": 2.2442,
+   "mouth_open_corr": 0.6104,
+   "det_rate": 1.0,
+   "face_nme_pen": 2.4435,
+   "mouth_nme_pen": 2.9572,
+   "pose_err_pen": 2.2442,
+   "pose_det_rate": 1.0
+  },
+  "realism": {
+   "clips": 12,
+   "trials": 24,
+   "score_1_10": 5.75,
+   "score_real_1_10": 7.833,
+   "fooled_rate": 0.042,
+   "errors": 0,
+   "order_consistency": 0.917,
+   "model": "sonnet"
+  }
+ },
+ "clips": {
+  "M000_P0115": {
+   "clip": "M000_P0115",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 2.3577,
+    "face_nme_pen": 2.3577,
+    "mouth_nme": 3.3471,
+    "mouth_nme_pen": 3.3471,
+    "mouth_open_corr": 0.7992,
+    "shoulder_width_px": 364.19,
+    "pose_points_mean": 12.14,
+    "pose_err": 2.819,
+    "pose_err_pen": 2.819,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 3.7346,
+    "lse_d": 10.1977,
+    "offset_frames": 1,
+    "lse_d_at0": 10.3149,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.6,
+   "realism": {
+    "realism": 6.0,
+    "realism_real": 7.0,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 6,
+      "realism_real": 6,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 3,
+      "reason_realism": "Both look like real talking-head video with natural skin texture and lighting. Some soft mouth and teeth detail and slight facial warping across frames hint at synthesis. B has glasses that appear in only one frame, which is a clear inconsistency, and A has a minor mouth blur.",
+      "reason_choice": "Strip B has natural head movement, glasses and varied expressions. Strip A looks smoother and more static, with the same skin texture and mouth shapes repeated across frames."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 6,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 4,
+      "reason_realism": "B has natural skin texture, moles and consistent teeth and shirt detail. A looks slightly smoothed. Its glasses appear and disappear between frames, and the face is soft and warps a bit.",
+      "reason_choice": "Strip A has glasses appearing in only one frame and shifting face geometry, which looks synthesized. Strip B stays consistent in skin texture, spots and collar."
+     }
+    ]
+   }
+  },
+  "M001_P0115": {
+   "clip": "M001_P0115",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 2.5377,
+    "face_nme_pen": 2.5377,
+    "mouth_nme": 2.9617,
+    "mouth_nme_pen": 2.9617,
+    "mouth_open_corr": 0.5522,
+    "shoulder_width_px": 348.68,
+    "pose_points_mean": 12.3,
+    "pose_err": 1.8891,
+    "pose_err_pen": 1.8891,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 2.8757,
+    "lse_d": 10.8708,
+    "offset_frames": 0,
+    "lse_d_at0": 10.8708,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.6,
+   "realism": {
+    "realism": 6.0,
+    "realism_real": 7.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 6,
+      "realism_real": 7,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 3,
+      "reason_realism": "Both look like real talking-head footage. A is softer, with smoothed skin and slightly odd mouth and beard detail. B has sharper skin texture and a consistent shirt, logo and lavalier mic, so it looks a bit more natural.",
+      "reason_choice": "Strip B has natural skin texture, consistent details (lavalier, logo, wrinkles) and varied mouth shapes; strip A looks smoother and slightly warped around the face and collar."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 6,
+      "realism_real": 7,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 3,
+      "reason_realism": "Both look like real talking-head footage with natural skin texture and head motion. B has slightly more smeared, warped detail around the glasses/eyes and shirt stripes, so it looks a bit less real.",
+      "reason_choice": "Strip A has natural skin texture, varied expressions and a consistent lavalier and logo. Strip B looks smoother and the shirt stripes and glasses edge shimmer."
+     }
+    ]
+   }
+  },
+  "M009_P0217": {
+   "clip": "M009_P0217",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 2.3289,
+    "face_nme_pen": 2.3289,
+    "mouth_nme": 2.7651,
+    "mouth_nme_pen": 2.7651,
+    "mouth_open_corr": 0.3917,
+    "shoulder_width_px": 377.0,
+    "pose_points_mean": 11.23,
+    "pose_err": 2.5138,
+    "pose_err_pen": 2.5138,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 2.1997,
+    "lse_d": 10.0558,
+    "offset_frames": 1,
+    "lse_d_at0": 10.2282,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.6,
+   "realism": {
+    "realism": 5.0,
+    "realism_real": 7.5,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 5,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 4,
+      "reason_realism": "A has sharp, natural curly hair, skin texture and consistent lighting. B looks softer and smoothed, with odd reddish eye glints, blurry hair edges and a waxy face, so it looks more synthetic.",
+      "reason_choice": "Strip A has sharp, consistent curly hair and natural eyes and mouth. Strip B has smeared hair, odd reddish glints in the eyes, and a soft, warped face, which look synthetic."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 5,
+      "realism_real": 7,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 4,
+      "reason_realism": "A looks soft and smoothed, with odd eye glints and a slightly waxy face. B has sharper, detailed curly hair and more natural skin and expressions, with only minor softness around the mouth.",
+      "reason_choice": "B has fine, natural curly hair detail, consistent lighting, and natural blinks and head motion. A looks smoothed, with odd reddish eye glints and a waxy face, which suggests synthesis."
+     }
+    ]
+   }
+  },
+  "M023_P0370": {
+   "clip": "M023_P0370",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 2.4015,
+    "face_nme_pen": 2.4015,
+    "mouth_nme": 3.1503,
+    "mouth_nme_pen": 3.1503,
+    "mouth_open_corr": 0.4237,
+    "shoulder_width_px": 353.55,
+    "pose_points_mean": 11.09,
+    "pose_err": 1.4977,
+    "pose_err_pen": 1.4977,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 1.386,
+    "lse_d": 11.1681,
+    "offset_frames": 1,
+    "lse_d_at0": 11.2505,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.7,
+   "realism": {
+    "realism": 6.0,
+    "realism_real": 7.5,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 6,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 2,
+      "reason_realism": "A looks slightly smooth and soft, with an odd mouth and eyes and uniform skin. B has natural skin texture, teeth and head motion, and looks like real camera footage.",
+      "reason_choice": "B has natural teeth detail, an earring and varied expressions; A looks smoother with odd eye highlights. Some jaw distortion in B keeps confidence low."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 6,
+      "realism_real": 7,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 3,
+      "reason_realism": "Both look like real talking-head video with plausible skin, hair and clothing. A has natural texture and varied expressions. B is a bit smoother and softer, and its mouth and eyes look slightly synthetic.",
+      "reason_choice": "Strip A shows natural, varied head motion, uneven teeth and asymmetric expression. Strip B looks smoother and more uniform, with teeth and mouth shapes that seem idealized."
+     }
+    ]
+   }
+  },
+  "M037_P0485": {
+   "clip": "M037_P0485",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 2.8239,
+    "face_nme_pen": 2.8239,
+    "mouth_nme": 2.3916,
+    "mouth_nme_pen": 2.3916,
+    "mouth_open_corr": 0.8037,
+    "shoulder_width_px": 325.06,
+    "pose_points_mean": 13.0,
+    "pose_err": 2.6302,
+    "pose_err_pen": 2.6302,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 3.2336,
+    "lse_d": 9.7505,
+    "offset_frames": 1,
+    "lse_d_at0": 10.334,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.6,
+   "realism": {
+    "realism": 6.5,
+    "realism_real": 8.5,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 7,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 3,
+      "reason_realism": "A has natural skin texture, hair detail and varied expressions that look like real camera footage. B looks plausible but is smoother and softer, with slightly rigid head and hair and a mild synthetic feel around the mouth.",
+      "reason_choice": "Strip A has natural head motion, varied expressions and consistent detail. Strip B looks smoother and more uniform, with an identical hair part and symmetry across frames, which suggests synthesis."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 6,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 3,
+      "reason_realism": "A looks smooth and soft with slightly waxy skin and low detail, hinting at synthesis. B has natural skin texture, varied expressions and head motion, and consistent lighting, so it looks like a real camera.",
+      "reason_choice": "Strip B shows natural, varied expressions with detailed skin, hair and clothing texture. Strip A looks smoother and more uniform, with a slightly artificial face."
+     }
+    ]
+   }
+  },
+  "M038_P0485": {
+   "clip": "M038_P0485",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 3.3933,
+    "face_nme_pen": 3.3933,
+    "mouth_nme": 3.1356,
+    "mouth_nme_pen": 3.1356,
+    "mouth_open_corr": 0.5328,
+    "shoulder_width_px": 334.1,
+    "pose_points_mean": 12.97,
+    "pose_err": 2.09,
+    "pose_err_pen": 2.09,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 3.2115,
+    "lse_d": 9.4118,
+    "offset_frames": 1,
+    "lse_d_at0": 9.91,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.7,
+   "realism": {
+    "realism": 6.5,
+    "realism_real": 8.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 7,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 3,
+      "reason_realism": "Both look like real camera footage. A has natural skin texture, hair detail and lighting with a plausible mouth and eye motion. B is a bit smoother and softer, with a slightly waxy face, but is still very convincing.",
+      "reason_choice": "Strip A has natural texture, asymmetric detail and varied head and expression changes. Strip B looks smoother and more uniform, with an overly stable, synthetic-looking face."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 6,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 3,
+      "reason_realism": "B has sharp, natural skin texture, hair detail and clothing with plausible expression changes. A is softer and smoother, with slightly blurry, waxy facial detail and a mouth that looks a bit synthetic, though it is still fairly plausible.",
+      "reason_choice": "Strip B has natural detail, hair texture, clothing and consistent skin; strip A looks smoother and slightly artificial around eyes and mouth."
+     }
+    ]
+   }
+  },
+  "M075_P0845": {
+   "clip": "M075_P0845",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 2.1883,
+    "face_nme_pen": 2.1883,
+    "mouth_nme": 2.4726,
+    "mouth_nme_pen": 2.4726,
+    "mouth_open_corr": 0.6176,
+    "shoulder_width_px": 379.97,
+    "pose_points_mean": 12.15,
+    "pose_err": 2.4017,
+    "pose_err_pen": 2.4017,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 2.3914,
+    "lse_d": 11.2116,
+    "offset_frames": 0,
+    "lse_d_at0": 11.2116,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.0,
+   "realism": {
+    "realism": 6.0,
+    "realism_real": 8.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 6,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 3,
+      "reason_realism": "A has soft, smeared skin and hair that changes between frames (bangs appear), and a slightly warped mouth. B has consistent detail, natural hair, earrings and hand movement, and looks like a real camera.",
+      "reason_choice": "Strip B has natural detail (messy hair strands, earrings, hand entering frame, natural motion); Strip A's hair changes oddly (bangs appear) and looks smoothed."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 6,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 3,
+      "reason_realism": "A has natural skin texture, hair movement and a hand gesture, and its mouth motion looks plausible. B looks smoother and a little waxy. Its bangs change between frames, and the mouth and eye motion look slightly synthetic.",
+      "reason_choice": "A has natural head motion, a hand entering, and consistent hair and earring detail. B's hair bangs change between frames and its mouth and face look slightly warped, which suggests synthesis."
+     }
+    ]
+   }
+  },
+  "M076_P0845": {
+   "clip": "M076_P0845",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 2.0529,
+    "face_nme_pen": 2.0529,
+    "mouth_nme": 2.4494,
+    "mouth_nme_pen": 2.4494,
+    "mouth_open_corr": 0.5001,
+    "shoulder_width_px": 383.05,
+    "pose_points_mean": 12.0,
+    "pose_err": 2.2374,
+    "pose_err_pen": 2.2374,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 1.0341,
+    "lse_d": 11.9316,
+    "offset_frames": 0,
+    "lse_d_at0": 11.9316,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.0,
+   "realism": {
+    "realism": 5.5,
+    "realism_real": 8.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 5,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 4,
+      "reason_realism": "A has smoothed, waxy face with shifting bangs/hair and inconsistent eye detail across frames; B has natural skin texture, stable earrings, and coherent hair and lighting.",
+      "reason_choice": "Strip B has natural, detailed hair, earrings, and varied expressions and gaze. Strip A's face looks smoothed, with hair that changes shape between frames and a plasticky look."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 6,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 4,
+      "reason_realism": "A has natural skin, hair strands and earrings, with consistent lighting and plausible expressions. B looks softer and smoother, with hair bangs that change between frames and a flickering, inconsistent eye color, which suggests synthesis.",
+      "reason_choice": "Strip A has natural, consistent details (earrings, flyaway hair, lipstick, natural gaze shifts). Strip B's hair bangs appear and disappear between frames, and eye colour is inconsistent, which points to synthesis."
+     }
+    ]
+   }
+  },
+  "M092_P0989": {
+   "clip": "M092_P0989",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 1.8576,
+    "face_nme_pen": 1.8576,
+    "mouth_nme": 2.4777,
+    "mouth_nme_pen": 2.4777,
+    "mouth_open_corr": 0.5988,
+    "shoulder_width_px": 318.12,
+    "pose_points_mean": 13.0,
+    "pose_err": 3.0689,
+    "pose_err_pen": 3.0689,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 3.7695,
+    "lse_d": 10.2562,
+    "offset_frames": 1,
+    "lse_d_at0": 10.4056,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.0,
+   "realism": {
+    "realism": 5.0,
+    "realism_real": 8.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 5,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 4,
+      "reason_realism": "A looks smoothed and waxy with a soft face, unstable features and odd eye and mouth rendering. B has natural texture, glasses, hair detail and expressions that look like a real camera.",
+      "reason_choice": "B has natural, varied expressions with consistent glasses, hair strands and clothing detail; A looks smoothed, with shifting facial structure and a waxy look."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 5,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 4,
+      "reason_realism": "A has natural skin texture, glasses and expressive movement that look camera-captured. B has smooth, waxy skin, soft blurry detail and slightly inconsistent eyes and face shape between frames, which looks synthetic.",
+      "reason_choice": "Strip A has natural, varied expressions, sharp hair and glasses detail, and consistent lighting. Strip B looks smooth and waxy, with a slightly warped face and odd eye rendering, which suggests it was synthesised."
+     }
+    ]
+   }
+  },
+  "M099_P1067": {
+   "clip": "M099_P1067",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 2.0925,
+    "face_nme_pen": 2.0925,
+    "mouth_nme": 3.0078,
+    "mouth_nme_pen": 3.0078,
+    "mouth_open_corr": 0.742,
+    "shoulder_width_px": 356.52,
+    "pose_points_mean": 12.76,
+    "pose_err": 2.0135,
+    "pose_err_pen": 2.0135,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 2.5999,
+    "lse_d": 10.8098,
+    "offset_frames": 1,
+    "lse_d_at0": 11.0677,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.0,
+   "realism": {
+    "realism": 4.0,
+    "realism_real": 8.5,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 4,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A is consistent, natural skin, hair, and expressions with a stable identity. B has identity drift (frame 5 shows a different face with a mustache and goatee), smoothed or warped features, and a soft, artificial look.",
+      "reason_choice": "Strip B's identity morphs (a moustache and goatee appear in frame 5, and the face shape shifts), so it is synthesised. Strip A stays consistent, with natural expressions and a hand gesture."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 4,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 4,
+      "reason_realism": "A's face is smooth and shifts between frames, with a mustache and stubble appearing in one frame and a different identity look, which reads as synthetic. B has natural skin texture, consistent identity, and a real hand gesture with coherent motion.",
+      "reason_choice": "Strip A's identity shifts across frames (a mustache and different facial structure appear in frame 5), which is a synthesis artifact. Strip B is consistent and has natural expressions and hand motion."
+     }
+    ]
+   }
+  },
+  "M100_P1067": {
+   "clip": "M100_P1067",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 2.1843,
+    "face_nme_pen": 2.1843,
+    "mouth_nme": 3.4473,
+    "mouth_nme_pen": 3.4473,
+    "mouth_open_corr": 0.6161,
+    "shoulder_width_px": 361.62,
+    "pose_points_mean": 12.99,
+    "pose_err": 2.2213,
+    "pose_err_pen": 2.2213,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 1.8866,
+    "lse_d": 11.2029,
+    "offset_frames": 0,
+    "lse_d_at0": 11.2029,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.0,
+   "realism": {
+    "realism": 6.0,
+    "realism_real": 8.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 6,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 3,
+      "reason_realism": "A looks smoothed and soft, with slight head and hair shape shifts and blurry mouth detail. B has natural skin texture, wrinkles and hair, with consistent detail and expressions.",
+      "reason_choice": "Strip B has consistent fine skin texture, stable hair and natural expression changes. Strip A looks smoother, and its hair and head shape shift between frames in a way that suggests synthesis."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 6,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 3,
+      "reason_realism": "A has natural skin texture, wrinkles and consistent hair and expressions. B looks softer and smoother, and its hair and mouth shapes shift slightly from frame to frame, which looks synthetic.",
+      "reason_choice": "Strip A has natural, consistent skin texture, hair and a lavalier mic. Strip B looks smoother and its hair and collar shift between frames, which suggests synthesis."
+     }
+    ]
+   }
+  },
+  "M103_P1174": {
+   "clip": "M103_P1174",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 3.1039,
+    "face_nme_pen": 3.1039,
+    "mouth_nme": 3.8806,
+    "mouth_nme_pen": 3.8806,
+    "mouth_open_corr": 0.7467,
+    "shoulder_width_px": 355.98,
+    "pose_points_mean": 12.6,
+    "pose_err": 1.5474,
+    "pose_err_pen": 1.5474,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 3.3321,
+    "lse_d": 10.4375,
+    "offset_frames": 0,
+    "lse_d_at0": 10.4375,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.0,
+   "realism": {
+    "realism": 6.5,
+    "realism_real": 8.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 7,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 3,
+      "reason_realism": "Both look like real talking-head video with natural skin, lighting and expressions. A has varied, natural mouth shapes and a hand gesture. B is slightly soft and smoothed, with a faint odd glint in the eyes.",
+      "reason_choice": "Strip A has natural, varied expressions, a hand gesture and consistent detail. Strip B looks smoother and slightly artificial, with odd eye glints and a mouth that stays about the same."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 6,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 3,
+      "reason_realism": "A is soft and smoothed, with slightly odd eyes and a blurry mouth. B has natural skin texture, expressive motion and consistent detail.",
+      "reason_choice": "B has natural head tilt, a hand gesture, varied expressions and skin texture; A looks smoother and more static, like a synthesised face."
+     }
+    ]
+   }
+  }
+ }
+}

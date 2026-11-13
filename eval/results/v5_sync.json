@@ -1,0 +1,727 @@
+{
+ "run": "v5_sync",
+ "dir": "$WORK/runs/v5_sync/out",
+ "made": "2026-11-13 07:29:11",
+ "sync_box": "mp",
+ "inputs": "ROOT/data/clips",
+ "secs_metrics": 0.9,
+ "secs_total": 79.4,
+ "mean": {
+  "n_clips": 12,
+  "n_failed": 0,
+  "syncnet": {
+   "lse_c": 4.2508,
+   "lse_d": 9.6064,
+   "offset_frames": -0.3333,
+   "abs_offset_frames": 0.3333,
+   "lse_d_at0": 9.9058
+  },
+  "landmarks": {
+   "face_nme": 2.0734,
+   "mouth_nme": 2.0491,
+   "pose_err": 1.7509,
+   "mouth_open_corr": 0.9111,
+   "det_rate": 1.0,
+   "face_nme_pen": 2.0734,
+   "mouth_nme_pen": 2.0491,
+   "pose_err_pen": 1.7509,
+   "pose_det_rate": 1.0
+  },
+  "realism": {
+   "clips": 12,
+   "trials": 24,
+   "score_1_10": 3.125,
+   "score_real_1_10": 8.667,
+   "fooled_rate": 0.0,
+   "errors": 0,
+   "order_consistency": 1.0,
+   "model": "sonnet"
+  }
+ },
+ "clips": {
+  "M000_P0115": {
+   "clip": "M000_P0115",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 2.0715,
+    "face_nme_pen": 2.0715,
+    "mouth_nme": 1.8427,
+    "mouth_nme_pen": 1.8427,
+    "mouth_open_corr": 0.9476,
+    "shoulder_width_px": 364.19,
+    "pose_points_mean": 12.14,
+    "pose_err": 1.4408,
+    "pose_err_pen": 1.4408,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 5.351,
+    "lse_d": 9.2548,
+    "offset_frames": 0,
+    "lse_d_at0": 9.2548,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.7,
+   "realism": {
+    "realism": 3.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has natural skin texture, consistent detail and plausible mouth motion. B has smeared, waxy skin, red artifacts on the eye, and a warped, unstable face and mouth.",
+      "reason_choice": "Strip A has natural skin texture and consistent detail. Strip B has red glitch artifacts near the eye, smeared features and a plastic look, which points to synthesis."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has smeared, blurry features, pink glitch artifacts at the eye, and shifting skin tone and face shape between frames. B has natural skin texture, consistent details and clothing, and looks like real footage.",
+      "reason_choice": "Strip A has red artifacts on the eye, a blurry face and shifting skin tone. Strip B has sharp, consistent skin detail and a stable shirt, which fits real footage."
+     }
+    ]
+   }
+  },
+  "M001_P0115": {
+   "clip": "M001_P0115",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 1.9057,
+    "face_nme_pen": 1.9057,
+    "mouth_nme": 1.7188,
+    "mouth_nme_pen": 1.7188,
+    "mouth_open_corr": 0.9243,
+    "shoulder_width_px": 348.68,
+    "pose_points_mean": 12.3,
+    "pose_err": 1.5356,
+    "pose_err_pen": 1.5356,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 5.7456,
+    "lse_d": 9.1298,
+    "offset_frames": -1,
+    "lse_d_at0": 9.8296,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.7,
+   "realism": {
+    "realism": 3.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has a smeared, waxy face, red glitch artifacts at the eye, blurry mouth and a changing face shape. B has natural skin texture, a consistent identity and sharp details such as the Nike logo and lavalier mic.",
+      "reason_choice": "Strip B has natural skin texture, a consistent Nike logo and lavalier mic, and stable detail. Strip A has smeared skin, red artifacts on the eye, and a warped, changing collar and clothing, which look synthetic."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has natural skin texture, sharp detail, consistent lighting and a clean Nike logo. B looks synthetic: waxy smeared skin, red glitchy artifacts at the eye, warped mouth and garbled collar and clothing details.",
+      "reason_choice": "Strip A has natural skin texture, a crisp Nike logo and a lapel mic. Strip B has smeared, plastic skin, red artifacts at the eye, and a warped collar and clip."
+     }
+    ]
+   }
+  },
+  "M009_P0217": {
+   "clip": "M009_P0217",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 1.9211,
+    "face_nme_pen": 1.9211,
+    "mouth_nme": 2.3662,
+    "mouth_nme_pen": 2.3662,
+    "mouth_open_corr": 0.8066,
+    "shoulder_width_px": 377.0,
+    "pose_points_mean": 11.23,
+    "pose_err": 1.5947,
+    "pose_err_pen": 1.5947,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 3.5323,
+    "lse_d": 8.4726,
+    "offset_frames": 0,
+    "lse_d_at0": 8.4726,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.7,
+   "realism": {
+    "realism": 2.0,
+    "realism_real": 8.5,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 2,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has a glowing pink artifact on the eye, a wig-like hair texture and a waxy, smeared face, so it looks synthetic. B has natural curly hair, skin detail and eye motion, and looks like real camera footage.",
+      "reason_choice": "Strip A has a glitchy pink artifact on the eye, plasticky skin and hair that looks like noodles. Strip B has natural curls, a visible lavalier mic, and consistent, natural detail."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like a real camera capture, with natural curls, skin and eye detail. B has glitchy pink artifacts on one eye, hair that looks like repeating noodle texture, a waxy distorted face, and blur.",
+      "reason_choice": "Strip B has a glowing pink artifact on the eye, warped waxy face and smeared, wormy hair texture. Strip A has natural curls, skin and eye detail."
+     }
+    ]
+   }
+  },
+  "M023_P0370": {
+   "clip": "M023_P0370",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 1.7605,
+    "face_nme_pen": 1.7605,
+    "mouth_nme": 1.7837,
+    "mouth_nme_pen": 1.7837,
+    "mouth_open_corr": 0.9018,
+    "shoulder_width_px": 353.55,
+    "pose_points_mean": 11.09,
+    "pose_err": 1.58,
+    "pose_err_pen": 1.58,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 3.1232,
+    "lse_d": 9.9925,
+    "offset_frames": -1,
+    "lse_d_at0": 10.9226,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.7,
+   "realism": {
+    "realism": 4.0,
+    "realism_real": 8.5,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 4,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has natural skin texture, teeth, and consistent identity and clothing. B has glowing red or pink artifacts on one eye, a smoothed, warped face, and shifting identity and clothing, which looks synthetic.",
+      "reason_choice": "Strip B has glowing red artifacts in the eyes, smoothed skin and a changing identity (no beard, different shirt). Strip A has consistent natural detail."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 4,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 4,
+      "reason_realism": "A has glowing red smeared eyes, blurry/soft face and warped features that look synthetic; B has natural skin texture, teeth, eyes and consistent lighting like real camera footage.",
+      "reason_choice": "Strip A has smeared, glitchy red artifacts on the eyes and a soft, plastic-looking face. Strip B has natural detail in the teeth, eyes and clothing, and its motion is consistent."
+     }
+    ]
+   }
+  },
+  "M037_P0485": {
+   "clip": "M037_P0485",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 2.287,
+    "face_nme_pen": 2.287,
+    "mouth_nme": 2.4803,
+    "mouth_nme_pen": 2.4803,
+    "mouth_open_corr": 0.9477,
+    "shoulder_width_px": 325.06,
+    "pose_points_mean": 13.0,
+    "pose_err": 2.0756,
+    "pose_err_pen": 2.0756,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 3.4074,
+    "lse_d": 10.2821,
+    "offset_frames": 0,
+    "lse_d_at0": 10.2821,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.7,
+   "realism": {
+    "realism": 3.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has glowing magenta eyes, warped mouth/nose in the last frame, a smeared look and shifting face and hair identity. B has natural skin texture, consistent features and plausible expressions.",
+      "reason_choice": "Strip A has red glitchy eyes, a smeared dark mouth artifact, and a face and hair that shift between frames. Strip B has natural skin texture, consistent hair and clothing, and coherent expressions."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like natural camera footage with consistent skin, hair and expressions. B has glowing pink eye artifacts, a smeared mouth and nose in the last frame, a hairline and identity that change between frames, and a waxy, over-smoothed look.",
+      "reason_choice": "Strip B shows identity drift between frames, magenta eye artifacts, and a distorted nose and mouth in the last frame. Strip A is consistent and natural."
+     }
+    ]
+   }
+  },
+  "M038_P0485": {
+   "clip": "M038_P0485",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 2.4639,
+    "face_nme_pen": 2.4639,
+    "mouth_nme": 3.0201,
+    "mouth_nme_pen": 3.0201,
+    "mouth_open_corr": 0.847,
+    "shoulder_width_px": 334.1,
+    "pose_points_mean": 12.97,
+    "pose_err": 2.1441,
+    "pose_err_pen": 2.1441,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 3.0784,
+    "lse_d": 10.5365,
+    "offset_frames": 0,
+    "lse_d_at0": 10.5365,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.7,
+   "realism": {
+    "realism": 4.0,
+    "realism_real": 8.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 4,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 4,
+      "reason_realism": "A has smeared, blurry texture, odd pink glitchy artifacts on one eye and a warped face; B has natural skin detail, consistent hair and lighting, and plausible motion.",
+      "reason_choice": "Strip B has natural sharp detail, skin texture and consistent hair/clothing; strip A looks smoothed with odd pink eye glitches and blurry artifacts."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 4,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 4,
+      "reason_realism": "A has natural skin texture, hair and lighting with consistent, plausible motion. B is smoothed and blurry, with pink or magenta glitches on the left eye and warped facial detail, which look like generation artifacts.",
+      "reason_choice": "Strip A has natural, sharp skin texture, hair and consistent lighting. Strip B has smeared, plasticky skin and odd pink glitchy artifacts in the eye, which suggest synthesis."
+     }
+    ]
+   }
+  },
+  "M075_P0845": {
+   "clip": "M075_P0845",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 1.9478,
+    "face_nme_pen": 1.9478,
+    "mouth_nme": 1.9309,
+    "mouth_nme_pen": 1.9309,
+    "mouth_open_corr": 0.9209,
+    "shoulder_width_px": 379.97,
+    "pose_points_mean": 12.15,
+    "pose_err": 1.5546,
+    "pose_err_pen": 1.5546,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 4.6599,
+    "lse_d": 9.6082,
+    "offset_frames": 0,
+    "lse_d_at0": 9.6082,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.7,
+   "realism": {
+    "realism": 3.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has a glowing pink artifact on the eye, blurry smoothed skin, warped earrings and smeared texture at the bottom. B has natural skin texture, detailed hair, a stable earring and a natural hand gesture, so it looks like real camera footage.",
+      "reason_choice": "Strip A has smeared, warped earrings, a glitchy pink artifact on the eye, and a blurry, smooth face and hair. Strip B has sharp, consistent details, such as the heart earrings, curly hair, and a hand gesture."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like natural camera footage with consistent detail; B has a glowing pink artifact on the eye, warped earrings, smeared blur and glitchy streaks at the chest.",
+      "reason_choice": "Strip B has glitchy magenta artifacts on the eye, warped earrings and smeared shirt texture. Strip A is consistent and natural with detailed earrings and hands."
+     }
+    ]
+   }
+  },
+  "M076_P0845": {
+   "clip": "M076_P0845",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 2.0929,
+    "face_nme_pen": 2.0929,
+    "mouth_nme": 1.6144,
+    "mouth_nme_pen": 1.6144,
+    "mouth_open_corr": 0.8685,
+    "shoulder_width_px": 383.05,
+    "pose_points_mean": 12.0,
+    "pose_err": 1.5436,
+    "pose_err_pen": 1.5436,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 3.2916,
+    "lse_d": 10.859,
+    "offset_frames": -2,
+    "lse_d_at0": 12.8216,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.7,
+   "realism": {
+    "realism": 2.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has glowing eye artifacts, distorted nose and mouth, a warped face and blurry, low-detail skin. B has natural skin texture, consistent earrings and lighting, and normal expressions and eye movement.",
+      "reason_choice": "Strip B has natural, sharp detail and consistent features. Strip A shows warped mouth and nose, color glitches, and odd eye glints."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like natural camera footage with consistent detail, earrings and expressions. B has obvious artifacts: glowing eye glitches, a distorted mouth and nose, warped earrings, and smeared texture.",
+      "reason_choice": "Strip A is natural and consistent, with stable earrings and clean skin. Strip B has glitchy mouth and eye artifacts, color smearing, and warped earrings, so it is synthetic."
+     }
+    ]
+   }
+  },
+  "M092_P0989": {
+   "clip": "M092_P0989",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 2.068,
+    "face_nme_pen": 2.068,
+    "mouth_nme": 1.9898,
+    "mouth_nme_pen": 1.9898,
+    "mouth_open_corr": 0.9175,
+    "shoulder_width_px": 318.12,
+    "pose_points_mean": 13.0,
+    "pose_err": 2.2049,
+    "pose_err_pen": 2.2049,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 4.9102,
+    "lse_d": 9.7317,
+    "offset_frames": 0,
+    "lse_d_at0": 9.7317,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.7,
+   "realism": {
+    "realism": 4.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 4,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has sharp natural skin, glasses and clothing detail with convincing expressions. B is blurry and smeared, with glitchy pink eye reflections, warped shirt texture and blocky artifacts, so it looks synthetic.",
+      "reason_choice": "Strip A has sharp, natural detail and consistent glasses and clothing. Strip B is smeared and blurry, with odd pink glints in the lenses, warped shirt texture and a changing collar, which look synthesised."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 4,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A is soft and smeared, with glitchy pink eye reflections, warped shirt texture and a blurry mouth, so it reads as synthetic. B is sharp and natural, with consistent glasses, skin and shirt detail and believable expressions.",
+      "reason_choice": "Strip B has sharp detail, natural expressions and consistent glasses and shirt. Strip A is blurry and smeared, with warped shirt texture and odd pink glints in the glasses."
+     }
+    ]
+   }
+  },
+  "M099_P1067": {
+   "clip": "M099_P1067",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 1.8592,
+    "face_nme_pen": 1.8592,
+    "mouth_nme": 1.7681,
+    "mouth_nme_pen": 1.7681,
+    "mouth_open_corr": 0.9231,
+    "shoulder_width_px": 356.52,
+    "pose_points_mean": 12.76,
+    "pose_err": 1.6178,
+    "pose_err_pen": 1.6178,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 4.244,
+    "lse_d": 10.1996,
+    "offset_frames": 0,
+    "lse_d_at0": 10.1996,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.7,
+   "realism": {
+    "realism": 3.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has smeared, waxy skin, odd red glitch artifacts on the eye and distorted mouth and nose. B has natural skin texture, expressions, hand gestures and a lapel mic, and looks like real camera footage.",
+      "reason_choice": "Strip B has natural skin texture, expressive motion, a hand entering the frame and a lapel mic. Strip A has a smeared, waxy face, red glitch artifacts on the eye and inconsistent features."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like genuine camera footage, with natural skin texture, expressions, hands and a lapel mic. B has red glitchy artifacts on the eye, a smeared mouth, a blurry waxy face, and warped clothing and hair, so it looks synthetic.",
+      "reason_choice": "Strip A shows consistent, natural detail, expressions, hand gestures and a lapel mic. Strip B has red glitch artifacts on the eye, a smeared mouth and an unstable face shape."
+     }
+    ]
+   }
+  },
+  "M100_P1067": {
+   "clip": "M100_P1067",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 1.861,
+    "face_nme_pen": 1.861,
+    "mouth_nme": 1.9944,
+    "mouth_nme_pen": 1.9944,
+    "mouth_open_corr": 0.9611,
+    "shoulder_width_px": 361.62,
+    "pose_points_mean": 12.99,
+    "pose_err": 2.2054,
+    "pose_err_pen": 2.2054,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 4.0466,
+    "lse_d": 8.8345,
+    "offset_frames": 0,
+    "lse_d_at0": 8.8345,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.7,
+   "realism": {
+    "realism": 3.0,
+    "realism_real": 8.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 3,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has natural skin texture, hair and expressions that stay consistent between frames. B has a glowing red-pink artifact on one eye, smeared and warped facial and hair detail, and shifting identity, so it looks synthetic.",
+      "reason_choice": "Strip B has red glitchy artifacts on one eye, warped identity and clothing and smeared hair between frames. Strip A is consistent and natural."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 3,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has a glowing pink/red artifact on one eye, smeared and blurry skin, and a warped face shape that shifts between frames. B has natural skin texture, consistent hair and clothing, and believable expressions.",
+      "reason_choice": "Strip A shows red eye artifacts, a smeared and changing face shape, and a mushy collar. Strip B has natural skin texture, stable features and a consistent collar and mic."
+     }
+    ]
+   }
+  },
+  "M103_P1174": {
+   "clip": "M103_P1174",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 2.6426,
+    "face_nme_pen": 2.6426,
+    "mouth_nme": 2.0794,
+    "mouth_nme_pen": 2.0794,
+    "mouth_open_corr": 0.9672,
+    "shoulder_width_px": 355.98,
+    "pose_points_mean": 12.6,
+    "pose_err": 1.5138,
+    "pose_err_pen": 1.5138,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 5.6198,
+    "lse_d": 8.3758,
+    "offset_frames": 0,
+    "lse_d_at0": 8.3758,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.7,
+   "realism": {
+    "realism": 3.5,
+    "realism_real": 8.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 3,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 4,
+      "reason_realism": "A is blurry and soft with odd reddish artifacts on the eye and distorted mouth shapes, so it looks synthetic. B is sharp with natural skin texture, consistent lighting, and natural expressions and gestures, so it looks like real footage.",
+      "reason_choice": "Strip B has sharp natural skin, hair and shirt detail with coherent expressions and a hand gesture. Strip A is blurry and smeared, with odd red glints on the eyes and warped mouth shapes."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 4,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has sharp, natural skin, lighting and mouth motion that look like a real camera. B is soft and smeared, with orange glitch artifacts on the eye and a warped mouth, which look synthetic.",
+      "reason_choice": "Strip A has sharp, natural detail and consistent identity; strip B is blurry with odd orange glitch artifacts on the eye and a smeared mouth, which looks synthesised."
+     }
+    ]
+   }
+  }
+ }
+}

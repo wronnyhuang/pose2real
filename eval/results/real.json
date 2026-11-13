@@ -1,0 +1,727 @@
+{
+ "run": "real",
+ "dir": "$WORK/eval/ref/real",
+ "made": "2026-11-13 00:26:53",
+ "sync_box": "mp",
+ "inputs": "ROOT/data/clips",
+ "secs_metrics": 100.3,
+ "secs_total": 805.7,
+ "mean": {
+  "n_clips": 12,
+  "n_failed": 0,
+  "syncnet": {
+   "lse_c": 6.16,
+   "lse_d": 7.8295,
+   "offset_frames": -0.5,
+   "abs_offset_frames": 0.5,
+   "lse_d_at0": 8.868
+  },
+  "landmarks": {
+   "face_nme": 0.0,
+   "mouth_nme": 0.0,
+   "pose_err": 0.0,
+   "mouth_open_corr": 1.0,
+   "det_rate": 1.0,
+   "face_nme_pen": 0.0,
+   "mouth_nme_pen": 0.0,
+   "pose_err_pen": 0.0,
+   "pose_det_rate": 1.0
+  },
+  "realism": {
+   "clips": 12,
+   "trials": 24,
+   "score_1_10": 8.083,
+   "score_real_1_10": 8.083,
+   "fooled_rate": 0.458,
+   "errors": 0,
+   "order_consistency": 0.083,
+   "model": "sonnet"
+  }
+ },
+ "clips": {
+  "M000_P0115": {
+   "clip": "M000_P0115",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 364.19,
+    "pose_points_mean": 12.14,
+    "pose_err": 0.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": false,
+   "syncnet": {
+    "lse_c": 8.7954,
+    "lse_d": 6.3591,
+    "offset_frames": 0,
+    "lse_d_at0": 6.3591,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 90.1,
+   "realism": {
+    "realism": 8.0,
+    "realism_real": 8.0,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two strips look identical. Both show a natural elderly man with realistic skin texture, age spots and mouth shapes, and I can't see any difference in realism.",
+      "reason_choice": "The two strips look practically identical at this resolution, so I can't see a reliable cue and this is a guess."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two strips look identical to me. Skin texture, lighting, mouth shapes and the collar all look like real camera footage, and I can't see any difference between them.",
+      "reason_choice": "The two strips look nearly identical at this resolution, so I couldn't find a visible difference and this is a guess."
+     }
+    ]
+   }
+  },
+  "M001_P0115": {
+   "clip": "M001_P0115",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 348.68,
+    "pose_points_mean": 12.3,
+    "pose_err": 0.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": false,
+   "syncnet": {
+    "lse_c": 7.4838,
+    "lse_d": 7.3269,
+    "offset_frames": -1,
+    "lse_d_at0": 10.6457,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 93.8,
+   "realism": {
+    "realism": 8.0,
+    "realism_real": 8.0,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two strips look almost identical. Both show natural skin texture, a consistent shirt and lavalier mic, and plausible talking motion, so I can't tell them apart on realism.",
+      "reason_choice": "The two strips look practically identical at this resolution, so I couldn't find a visible artifact that separates them. This is a guess."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two strips look essentially identical: natural skin texture, consistent lighting and a real-looking talking-head shot. I couldn't see any difference between them.",
+      "reason_choice": "The two strips look nearly identical, so this is essentially a guess with no reliable visible difference."
+     }
+    ]
+   }
+  },
+  "M009_P0217": {
+   "clip": "M009_P0217",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 377.0,
+    "pose_points_mean": 11.23,
+    "pose_err": 0.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": false,
+   "syncnet": {
+    "lse_c": 4.9495,
+    "lse_d": 6.9092,
+    "offset_frames": 0,
+    "lse_d_at0": 6.9092,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 94.8,
+   "realism": {
+    "realism": 8.0,
+    "realism_real": 8.0,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two strips look identical: same curly hair, skin texture, lighting and head motion, with no visible artifacts. I can't tell them apart on realism.",
+      "reason_choice": "The two strips look practically identical at this resolution, so I could not find a visible difference and this is a guess."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two strips look identical to me. Both show natural curly hair, skin texture and head motion, with no visible artifacts, so I can't separate them on realism.",
+      "reason_choice": "The two strips look virtually identical at this resolution, so I can't see a real difference and this is a guess."
+     }
+    ]
+   }
+  },
+  "M023_P0370": {
+   "clip": "M023_P0370",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 353.55,
+    "pose_points_mean": 11.09,
+    "pose_err": 0.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": false,
+   "syncnet": {
+    "lse_c": 4.6871,
+    "lse_d": 8.3925,
+    "offset_frames": -1,
+    "lse_d_at0": 10.9611,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 94.8,
+   "realism": {
+    "realism": 8.0,
+    "realism_real": 8.0,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two strips look the same to me. Skin texture, teeth, and head motion all look like a real camera recording, and I can't see any difference in quality between them.",
+      "reason_choice": "The two strips look practically identical at this resolution, so I couldn't find a visible difference and this is a guess."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "I couldn't see any difference between the two strips. Both look like real camera footage, with natural skin texture, teeth and head movement, and consistent lighting.",
+      "reason_choice": "The two strips look almost identical at this resolution, so I couldn't find a visible difference and this is a guess."
+     }
+    ]
+   }
+  },
+  "M037_P0485": {
+   "clip": "M037_P0485",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 325.06,
+    "pose_points_mean": 13.0,
+    "pose_err": 0.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": false,
+   "syncnet": {
+    "lse_c": 4.6489,
+    "lse_d": 8.8124,
+    "offset_frames": 0,
+    "lse_d_at0": 8.8124,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 96.7,
+   "realism": {
+    "realism": 8.5,
+    "realism_real": 8.5,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two strips look identical. Both show natural skin texture, hair and expressions, with consistent lighting and no visible artifacts, so I can't tell them apart.",
+      "reason_choice": "The two strips look identical at this resolution, so I can't tell them apart and this is a guess."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two strips look identical. Skin texture, hair, lighting and mouth motion all look like real camera footage, and I can't see any difference between them.",
+      "reason_choice": "The two strips look virtually identical at this resolution, so I couldn't find a reliable cue and this is a guess."
+     }
+    ]
+   }
+  },
+  "M038_P0485": {
+   "clip": "M038_P0485",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 334.1,
+    "pose_points_mean": 12.97,
+    "pose_err": 0.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": false,
+   "syncnet": {
+    "lse_c": 4.241,
+    "lse_d": 9.9876,
+    "offset_frames": 0,
+    "lse_d_at0": 9.9876,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 99.6,
+   "realism": {
+    "realism": 8.0,
+    "realism_real": 8.0,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two strips look the same to me. Both show natural skin texture, hair and lighting, with mouth movement that fits speech. I can't see any difference in realism between them.",
+      "reason_choice": "The two strips look nearly identical at this resolution, so I couldn't find a visible difference and this is a guess."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two strips look the same at this size. Both show natural skin texture, hair and lighting, and plausible mouth and head movement. I can't see a difference between them.",
+      "reason_choice": "The two strips look nearly identical, so this is a guess. I saw no clear artifact in either one."
+     }
+    ]
+   }
+  },
+  "M075_P0845": {
+   "clip": "M075_P0845",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 379.97,
+    "pose_points_mean": 12.15,
+    "pose_err": 0.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": false,
+   "syncnet": {
+    "lse_c": 5.6903,
+    "lse_d": 8.2927,
+    "offset_frames": -1,
+    "lse_d_at0": 8.3117,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 96.4,
+   "realism": {
+    "realism": 8.0,
+    "realism_real": 8.0,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two strips look identical to me. I see natural skin texture, lighting and hair, with plausible head movement and mouth shapes, so both look like real camera footage.",
+      "reason_choice": "The two strips look practically identical, so this is a guess with no visible cue to separate them."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two strips look identical to me. I found no visible difference between them. Both show natural skin texture, hair, lighting and a hand gesture, and they read as real camera footage.",
+      "reason_choice": "The two strips look practically identical, so this is a guess with no visible artifact to separate them."
+     }
+    ]
+   }
+  },
+  "M076_P0845": {
+   "clip": "M076_P0845",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 383.05,
+    "pose_points_mean": 12.0,
+    "pose_err": 0.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": false,
+   "syncnet": {
+    "lse_c": 6.2207,
+    "lse_d": 7.994,
+    "offset_frames": -3,
+    "lse_d_at0": 14.5495,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 88.9,
+   "realism": {
+    "realism": 8.0,
+    "realism_real": 8.0,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two strips look the same to me. Skin texture, hair, earrings and lighting are natural in both, and I can't see any difference in quality or artifacts.",
+      "reason_choice": "The two strips look practically identical at this resolution, so this is a guess."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "At the displayed size the two strips look identical. Both show natural skin texture, hair, earrings and lip motion, with no visible artifacts. I can't tell them apart.",
+      "reason_choice": "The two strips look practically identical, so I couldn't find a visible difference and this is a guess."
+     }
+    ]
+   }
+  },
+  "M092_P0989": {
+   "clip": "M092_P0989",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 318.12,
+    "pose_points_mean": 13.0,
+    "pose_err": 0.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": false,
+   "syncnet": {
+    "lse_c": 7.6548,
+    "lse_d": 7.4855,
+    "offset_frames": 0,
+    "lse_d_at0": 7.4855,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 97.2,
+   "realism": {
+    "realism": 8.0,
+    "realism_real": 8.0,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two strips look the same to me. Both show natural skin texture, glasses, hair and shirt, with plausible expressions and mouth shapes. I couldn't see any visible artifacts that separate them.",
+      "reason_choice": "The two strips look virtually identical, and I found no visible artifact that separates them, so this is a guess."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two strips look identical to me. Both show natural skin texture, hair, glasses and shirt, with plausible expressions and no visible artifacts, so I can't separate them.",
+      "reason_choice": "The two strips look practically identical at this resolution, so I couldn't find any visible artifact to separate them. This is a guess."
+     }
+    ]
+   }
+  },
+  "M099_P1067": {
+   "clip": "M099_P1067",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 356.52,
+    "pose_points_mean": 12.76,
+    "pose_err": 0.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": false,
+   "syncnet": {
+    "lse_c": 7.555,
+    "lse_d": 7.3797,
+    "offset_frames": 0,
+    "lse_d_at0": 7.3797,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 94.2,
+   "realism": {
+    "realism": 8.0,
+    "realism_real": 8.0,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two strips look identical, with natural skin texture, hair, expressions and hand movement. I can't see a visible difference between them.",
+      "reason_choice": "The two strips look nearly identical, so I can't see a real difference and this is a guess."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two strips look identical to me. Both show natural skin texture, consistent hair and earrings, plausible expressions and hand movement, and no visible artifacts that would mark them as CG.",
+      "reason_choice": "The two strips look virtually identical, and I couldn't find a visible difference, so this is a guess."
+     }
+    ]
+   }
+  },
+  "M100_P1067": {
+   "clip": "M100_P1067",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 361.62,
+    "pose_points_mean": 12.99,
+    "pose_err": 0.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": false,
+   "syncnet": {
+    "lse_c": 4.214,
+    "lse_d": 8.4028,
+    "offset_frames": 0,
+    "lse_d_at0": 8.4028,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 96.1,
+   "realism": {
+    "realism": 8.0,
+    "realism_real": 8.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two strips look the same to me. Skin texture, hair and expressions look natural in both, and I can't tell them apart on realism.",
+      "reason_choice": "The two strips look essentially identical at this resolution, so I couldn't find a visible difference and this is a guess."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two strips look the same to me. Both show natural skin texture, hair and expressions, with the same framing and lighting, and I can't see any artifacts that tell them apart.",
+      "reason_choice": "The two strips look nearly identical at this resolution, so I couldn't find a visible difference and this is a guess."
+     }
+    ]
+   }
+  },
+  "M103_P1174": {
+   "clip": "M103_P1174",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 355.98,
+    "pose_points_mean": 12.6,
+    "pose_err": 0.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": false,
+   "syncnet": {
+    "lse_c": 7.7795,
+    "lse_d": 6.6115,
+    "offset_frames": 0,
+    "lse_d_at0": 6.6115,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 94.2,
+   "realism": {
+    "realism": 8.5,
+    "realism_real": 8.5,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two strips look the same to me. Both show natural skin texture, lighting and a plausible talking expression, and I can't tell them apart.",
+      "reason_choice": "The two strips look almost identical, so this is a guess. I couldn't find a visible artifact that separates them."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two strips look identical. Both show natural skin texture, believable expressions, mouth shapes and hand motion, with no visible artifacts, so both read as real camera footage.",
+      "reason_choice": "The two strips look practically identical at this resolution, so I couldn't find a visible difference and this is a guess."
+     }
+    ]
+   }
+  }
+ }
+}

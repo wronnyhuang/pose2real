@@ -1,0 +1,2 @@
+t_s384 55 --bs 4 --size 384x512
+t_whand0 75 --bs 4 --ckpt --w_hand 0

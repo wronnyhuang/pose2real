@@ -1,0 +1,2196 @@
+{
+ "run": "t_base",
+ "dir": "$WORK/runs/t_base/out",
+ "made": "2026-11-13 13:16:48",
+ "sync_box": "mp",
+ "sync_interp": "linear",
+ "lmk": "$WORK/common/lmk.py",
+ "inputs": "ROOT/data/clips",
+ "secs_metrics": 156.5,
+ "secs_total": 321.8,
+ "failed": {},
+ "mean": {
+  "n_clips": 20,
+  "n_failed": 0,
+  "syncnet": {
+   "lse_c": 0.9848,
+   "lse_d": 11.9982,
+   "offset_frames": -1.35,
+   "abs_offset_frames": 2.85,
+   "lse_d_at0": 12.1858,
+   "n": 20
+  },
+  "landmarks": {
+   "face_nme": 4.5598,
+   "mouth_nme": 5.4814,
+   "mouth_open_corr": 0.359,
+   "det_rate": 1.0,
+   "face_nme_pen": 4.5598,
+   "mouth_nme_pen": 5.4814,
+   "pose_err": 2.7327,
+   "pose_err_pen": 2.7327,
+   "pose_det_rate": 1.0,
+   "shoulder_err": 2.1341,
+   "elbow_err": 3.4403,
+   "wrist_err": 5.323,
+   "arm_err": 4.3831
+  },
+  "hands": {
+   "hand_det_rate": 0.9416,
+   "hand_err_pen": 11.1187,
+   "hand_err_hs_pen": 33.8702,
+   "hand_extra_rate": 0.1845,
+   "hand_err": 5.6057,
+   "hand_err_hs": 36.7492,
+   "finger_pose_err": 25.7191,
+   "finger_angle_err_deg": 17.5686,
+   "n_hand_frames": 7996,
+   "n_hand_both": 7529,
+   "n_hand_clips": 20
+  },
+  "realism": {
+   "clips": 20,
+   "trials": 40,
+   "score_1_10": 2.575,
+   "score_real_1_10": 9.15,
+   "fooled_rate": 0.0,
+   "order_consistency": 1.0,
+   "errors": 0,
+   "hands_clips": 20,
+   "hands_score_1_10": 4.55,
+   "hands_score_real_1_10": 7.95,
+   "hands_errors": 0,
+   "model": "sonnet"
+  }
+ },
+ "mean_same12": {
+  "n_clips": 12,
+  "n_failed": 0,
+  "syncnet": {
+   "lse_c": 0.9801,
+   "lse_d": 12.128,
+   "offset_frames": 0.4167,
+   "abs_offset_frames": 2.0833,
+   "lse_d_at0": 12.3212,
+   "n": 12
+  },
+  "landmarks": {
+   "face_nme": 4.3084,
+   "mouth_nme": 5.0889,
+   "mouth_open_corr": 0.3388,
+   "det_rate": 1.0,
+   "face_nme_pen": 4.3084,
+   "mouth_nme_pen": 5.0889,
+   "pose_err": 2.6165,
+   "pose_err_pen": 2.6165,
+   "pose_det_rate": 1.0,
+   "shoulder_err": 2.0901,
+   "elbow_err": 3.1815,
+   "wrist_err": 4.3116,
+   "arm_err": 3.7471
+  },
+  "hands": {
+   "hand_det_rate": 0.9627,
+   "hand_err_pen": 8.6919,
+   "hand_err_hs_pen": 29.2055,
+   "hand_extra_rate": 0.1089,
+   "hand_err": 5.1548,
+   "hand_err_hs": 33.2688,
+   "finger_pose_err": 22.4837,
+   "finger_angle_err_deg": 15.1308,
+   "n_hand_frames": 4612,
+   "n_hand_both": 4440,
+   "n_hand_clips": 12
+  },
+  "realism": {
+   "clips": 12,
+   "trials": 24,
+   "score_1_10": 2.625,
+   "score_real_1_10": 9.167,
+   "fooled_rate": 0.0,
+   "order_consistency": 1.0,
+   "errors": 0,
+   "hands_clips": 12,
+   "hands_score_1_10": 4.667,
+   "hands_score_real_1_10": 8.083,
+   "hands_errors": 0,
+   "model": "sonnet"
+  }
+ },
+ "mean_gesture8": {
+  "n_clips": 8,
+  "n_failed": 0,
+  "syncnet": {
+   "lse_c": 0.9917,
+   "lse_d": 11.8036,
+   "offset_frames": -4.0,
+   "abs_offset_frames": 4.0,
+   "lse_d_at0": 11.9827,
+   "n": 8
+  },
+  "landmarks": {
+   "face_nme": 4.9369,
+   "mouth_nme": 6.0702,
+   "mouth_open_corr": 0.3892,
+   "det_rate": 1.0,
+   "face_nme_pen": 4.9369,
+   "mouth_nme_pen": 6.0702,
+   "pose_err": 2.907,
+   "pose_err_pen": 2.907,
+   "pose_det_rate": 1.0,
+   "shoulder_err": 2.2002,
+   "elbow_err": 3.8286,
+   "wrist_err": 6.8401,
+   "arm_err": 5.3371
+  },
+  "hands": {
+   "hand_det_rate": 0.9128,
+   "hand_err_pen": 14.4262,
+   "hand_err_hs_pen": 40.2276,
+   "hand_extra_rate": 0.375,
+   "hand_err": 6.2539,
+   "hand_err_hs": 41.7519,
+   "finger_pose_err": 30.3697,
+   "finger_angle_err_deg": 21.0726,
+   "n_hand_frames": 3384,
+   "n_hand_both": 3089,
+   "n_hand_clips": 8
+  },
+  "realism": {
+   "clips": 8,
+   "trials": 16,
+   "score_1_10": 2.5,
+   "score_real_1_10": 9.125,
+   "fooled_rate": 0.0,
+   "order_consistency": 1.0,
+   "errors": 0,
+   "hands_clips": 8,
+   "hands_score_1_10": 4.375,
+   "hands_score_real_1_10": 7.75,
+   "hands_errors": 0,
+   "model": "sonnet"
+  }
+ },
+ "clips": {
+  "M000_P0115": {
+   "clip": "M000_P0115",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 3.3686,
+    "face_nme_pen": 3.3686,
+    "mouth_nme": 4.644,
+    "mouth_nme_pen": 4.644,
+    "iod_px": 55.47,
+    "mouth_open_corr": 0.3407,
+    "shoulder_width_px": 195.6,
+    "pose_err": 3.0,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 3.0,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 2.1962,
+    "shoulder_err_frames": 240,
+    "elbow_err": 7.1143,
+    "elbow_err_frames": 240,
+    "wrist_err": 4.3824,
+    "wrist_err_frames": 240,
+    "arm_err": 5.7484,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 240,
+    "n_nohand_frames": 240,
+    "n_hand_both": 237,
+    "n_hand_extra": 4,
+    "n_hand_frames_slot": [
+     0,
+     240
+    ],
+    "hand_det_rate": 0.9875,
+    "hand_extra_rate": 0.0167,
+    "hand_err": 5.4328,
+    "hand_err_pen": 6.6149,
+    "hand_err_hs": 34.1039,
+    "hand_err_hs_pen": 30.6339,
+    "finger_pose_err": 27.2406,
+    "finger_angle_err_deg": 41.668,
+    "hand_size_px": 35.74
+   },
+   "lmk_cached": false,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 1.3019,
+    "lse_d": 12.5837,
+    "offset_frames": 0,
+    "lse_d_at0": 12.5837,
+    "n_windows": 195,
+    "crop_px": 175.79290386199952,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 76.6,
+   "set": "same12",
+   "realism": {
+    "realism": 2.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like real camera footage with natural skin, fabric and hand motion. B has obvious generation artifacts: a warped face, a smeared forehead highlight, a striped segmented arm, a distorted hand in the pocket, and a plasticky shirt texture.",
+      "reason_choice": "A shows natural detail and consistent anatomy. B has warped, smeared skin-toned sleeve patches, a distorted forehead and an odd hand in the pocket, which are synthesis artifacts."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has warped skin-textured sleeves, a distorted forehead and a deformed hand in the pocket, so it looks synthetic. B has natural skin, fabric, hands and consistent lighting, so it looks like real camera footage.",
+      "reason_choice": "B has natural detail, consistent anatomy and a stable background with a stool. A shows warped, banded arms, a distorted face and a smeared shirt texture, which are typical synthesis artifacts."
+     }
+    ],
+    "hands": {
+     "hands_score": 4.0,
+     "hands_score_real": 6.0,
+     "trials": [
+      {
+       "order": "real/gen",
+       "hands_gen": 4,
+       "hands_real": 6,
+       "reason": "A has plausible fingers and consistent anatomy with minor smoothing; B is blurrier, with fused or oddly shaped fingers and a morphing look across frames."
+      }
+     ]
+    }
+   }
+  },
+  "M001_P0115": {
+   "clip": "M001_P0115",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 3.6798,
+    "face_nme_pen": 3.6798,
+    "mouth_nme": 4.321,
+    "mouth_nme_pen": 4.321,
+    "iod_px": 52.83,
+    "mouth_open_corr": 0.6841,
+    "shoulder_width_px": 173.68,
+    "pose_err": 2.3119,
+    "pose_points_mean": 16.9,
+    "pose_err_pen": 2.3119,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 2.7818,
+    "shoulder_err_frames": 240,
+    "elbow_err": 3.3041,
+    "elbow_err_frames": 240,
+    "wrist_err": 4.8493,
+    "wrist_err_frames": 240,
+    "arm_err": 3.9777,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 438,
+    "n_nohand_frames": 42,
+    "n_hand_both": 423,
+    "n_hand_extra": 5,
+    "n_hand_frames_slot": [
+     229,
+     209
+    ],
+    "hand_det_rate": 0.9658,
+    "hand_extra_rate": 0.119,
+    "hand_err": 7.3399,
+    "hand_err_pen": 10.5132,
+    "hand_err_hs": 77.3978,
+    "hand_err_hs_pen": 40.257,
+    "finger_pose_err": 42.3586,
+    "finger_angle_err_deg": 11.625,
+    "hand_size_px": 33.8
+   },
+   "lmk_cached": false,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 1.2298,
+    "lse_d": 12.4499,
+    "offset_frames": -1,
+    "lse_d_at0": 12.9728,
+    "n_windows": 195,
+    "crop_px": 157.30505945682523,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 79.4,
+   "set": "same12",
+   "realism": {
+    "realism": 2.5,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has a warped, smeared face, mismatched skin patches, truncated or malformed limbs, and stumps for legs, so it looks CG. B has natural skin, fabric, hand motion and lighting, so it looks like a real camera shot.",
+      "reason_choice": "A has melted, distorted limbs, truncated legs, odd skin-textured sleeves and a warped face. B shows natural fabric, consistent anatomy and real detail."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like genuine camera footage with natural detail, motion and anatomy; B has warped skin patches on the forehead and arms, a smeared texture on the shirt, and malformed limbs, including a stump arm and truncated legs.",
+      "reason_choice": "B has melted limbs, a truncated arm, stumps for legs and smeared textures. A is a natural, coherent person."
+     }
+    ],
+    "hands": {
+     "hands_score": 4.0,
+     "hands_score_real": 8.0,
+     "trials": [
+      {
+       "order": "gen/real",
+       "hands_gen": 4,
+       "hands_real": 8,
+       "reason": "A has smooth, waxy, blobby hands with fused or odd fingers and a stump-like first frame. B shows natural veins, knuckles and sleeves, with only plausible motion blur."
+      }
+     ]
+    }
+   }
+  },
+  "M009_P0217": {
+   "clip": "M009_P0217",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 5.8171,
+    "face_nme_pen": 5.8171,
+    "mouth_nme": 5.1316,
+    "mouth_nme_pen": 5.1316,
+    "iod_px": 52.2,
+    "mouth_open_corr": 0.2018,
+    "shoulder_width_px": 193.43,
+    "pose_err": 3.3113,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 3.3113,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 1.4911,
+    "shoulder_err_frames": 240,
+    "elbow_err": 4.8417,
+    "elbow_err_frames": 240,
+    "wrist_err": 3.5381,
+    "wrist_err_frames": 240,
+    "arm_err": 4.1899,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 49,
+    "n_nohand_frames": 431,
+    "n_hand_both": 30,
+    "n_hand_extra": 51,
+    "n_hand_frames_slot": [
+     23,
+     26
+    ],
+    "hand_det_rate": 0.6122,
+    "hand_extra_rate": 0.1183,
+    "hand_err": 5.3496,
+    "hand_err_pen": 42.0508,
+    "hand_err_hs": 48.5676,
+    "hand_err_hs_pen": 67.9447,
+    "finger_pose_err": 36.3284,
+    "finger_angle_err_deg": 32.162,
+    "hand_size_px": 25.87
+   },
+   "lmk_cached": false,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 0.4624,
+    "lse_d": 9.7929,
+    "offset_frames": 1,
+    "lse_d_at0": 9.8155,
+    "n_windows": 195,
+    "crop_px": 164.35704511260985,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 71.1,
+   "set": "same12",
+   "realism": {
+    "realism": 2.5,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like real camera footage with natural hair, fabric and hands. B has warped, smeared arms with banded color, an orange glitch on the forehead, a distorted face and blurry hands, so it is clearly synthetic.",
+      "reason_choice": "A has natural curly hair, sharp detail and coherent hands. B has smeared sleeves with banded skin-tone artifacts, a glowing forehead patch and distorted hands."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has a smeared, warped body with banded arms, an orange glitch on the forehead and a blurry face, so it looks synthetic. B has natural curly hair, fabric texture, hands and lighting, so it looks like real camera footage.",
+      "reason_choice": "B shows natural curly hair, fabric texture and hands with real motion. A has smeared arms, a glowing orange forehead artifact and warped hands, which look synthetic."
+     }
+    ],
+    "hands": {
+     "hands_score": 4.0,
+     "hands_score_real": 8.0,
+     "trials": [
+      {
+       "order": "gen/real",
+       "hands_gen": 4,
+       "hands_real": 8,
+       "reason": "A has blurry, merged, distorted fingers that change shape between frames, which looks synthetic. B has stable, well-defined fingers and natural skin and creases."
+      }
+     ]
+    }
+   }
+  },
+  "M023_P0370": {
+   "clip": "M023_P0370",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 3.6276,
+    "face_nme_pen": 3.6276,
+    "mouth_nme": 4.6872,
+    "mouth_nme_pen": 4.6872,
+    "iod_px": 56.05,
+    "mouth_open_corr": 0.3692,
+    "shoulder_width_px": 190.73,
+    "pose_err": 1.9887,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 1.9887,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 1.8875,
+    "shoulder_err_frames": 240,
+    "elbow_err": 2.2508,
+    "elbow_err_frames": 240,
+    "wrist_err": 4.4855,
+    "wrist_err_frames": 240,
+    "arm_err": 3.3681,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 275,
+    "n_nohand_frames": 205,
+    "n_hand_both": 247,
+    "n_hand_extra": 49,
+    "n_hand_frames_slot": [
+     240,
+     35
+    ],
+    "hand_det_rate": 0.8982,
+    "hand_extra_rate": 0.239,
+    "hand_err": 5.6721,
+    "hand_err_pen": 15.2764,
+    "hand_err_hs": 30.9739,
+    "hand_err_hs_pen": 33.5091,
+    "finger_pose_err": 19.8898,
+    "finger_angle_err_deg": 27.444,
+    "hand_size_px": 42.45
+   },
+   "lmk_cached": false,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 0.7892,
+    "lse_d": 12.9014,
+    "offset_frames": -1,
+    "lse_d_at0": 13.3033,
+    "n_windows": 195,
+    "crop_px": 171.1794456071854,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 77.6,
+   "set": "same12",
+   "realism": {
+    "realism": 2.5,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has a warped, smeared face, an odd hairline glow, melted shirt texture and blurry arms, so it looks synthetic. B has natural detail, consistent fabric, a real stool and natural motion, so it looks like real footage.",
+      "reason_choice": "B has sharp, consistent detail and natural motion. A shows warped face, smeared textures, melting sleeve edges and distorted hands, which are typical of synthesis."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like real camera footage: natural skin, fabric detail, a stool in the background, and consistent hands. B has a smeared, warped face, a glowing forehead edge, a waxy mushy shirt texture, and blended arms, so it looks synthetic.",
+      "reason_choice": "A has natural detail, consistent patterned clothing and realistic hands. B has warped, smeared face and arms, odd forehead glow and texture artifacts typical of synthesis."
+     }
+    ],
+    "hands": {
+     "hands_score": 6.0,
+     "hands_score_real": 8.0,
+     "trials": [
+      {
+       "order": "gen/real",
+       "hands_gen": 6,
+       "hands_real": 8,
+       "reason": "A is blurry with soft, slightly mushy fingers in the last frame; B shows clear nails, knuckles and plausible finger overlap with natural motion."
+      }
+     ]
+    }
+   }
+  },
+  "M037_P0485": {
+   "clip": "M037_P0485",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 4.9053,
+    "face_nme_pen": 4.9053,
+    "mouth_nme": 6.899,
+    "mouth_nme_pen": 6.899,
+    "iod_px": 57.15,
+    "mouth_open_corr": 0.0198,
+    "shoulder_width_px": 213.97,
+    "pose_err": 2.7993,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 2.7993,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 2.6005,
+    "shoulder_err_frames": 240,
+    "elbow_err": 2.495,
+    "elbow_err_frames": 240,
+    "wrist_err": 4.8975,
+    "wrist_err_frames": 240,
+    "arm_err": 3.6963,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 480,
+    "n_nohand_frames": 0,
+    "n_hand_both": 480,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     240,
+     240
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": null,
+    "hand_err": 2.8798,
+    "hand_err_pen": 2.8798,
+    "hand_err_hs": 12.8901,
+    "hand_err_hs_pen": 12.8901,
+    "finger_pose_err": 9.7608,
+    "finger_angle_err_deg": 7.198,
+    "hand_size_px": 48.1
+   },
+   "lmk_cached": false,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 0.7481,
+    "lse_d": 12.5891,
+    "offset_frames": 13,
+    "lse_d_at0": 13.1627,
+    "n_windows": 195,
+    "crop_px": 173.4134875335693,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 80.7,
+   "set": "same12",
+   "realism": {
+    "realism": 2.0,
+    "realism_real": 10.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 2,
+      "realism_real": 10,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has smeared, striped textures, a warped face and a pasted-looking hairline, and looks like a synthetic render. B shows natural skin, fabric, jewelry and camera detail, and looks like real footage.",
+      "reason_choice": "B has natural detail, consistent textures, rings and a watch. A has smeared, warped textures on the sweater and arms, plus odd hair and face artifacts."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 2,
+      "realism_real": 10,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like real camera footage with natural detail, texture and motion. B has smeared, warped clothing and arm textures, a distorted face and hairline, and melted-looking hands, so it is clearly synthetic.",
+      "reason_choice": "A shows natural detail, consistent patterned clothing, jewelry and natural motion. B has smeared, warped textures, a melted face and hair, and a distorted body."
+     }
+    ],
+    "hands": {
+     "hands_score": 4.0,
+     "hands_score_real": 9.0,
+     "trials": [
+      {
+       "order": "real/gen",
+       "hands_gen": 4,
+       "hands_real": 9,
+       "reason": "A shows sharp, consistent real-looking hands with natural veins, nails, ring and watch. B is blurry, with fused or ambiguous fingers and warping between frames, so it looks synthetic."
+      }
+     ]
+    }
+   }
+  },
+  "M038_P0485": {
+   "clip": "M038_P0485",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 5.4235,
+    "face_nme_pen": 5.4235,
+    "mouth_nme": 7.358,
+    "mouth_nme_pen": 7.358,
+    "iod_px": 58.65,
+    "mouth_open_corr": -0.0913,
+    "shoulder_width_px": 223.04,
+    "pose_err": 2.4563,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 2.4563,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 0.9658,
+    "shoulder_err_frames": 240,
+    "elbow_err": 1.7065,
+    "elbow_err_frames": 240,
+    "wrist_err": 4.4992,
+    "wrist_err_frames": 240,
+    "arm_err": 3.1028,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 480,
+    "n_nohand_frames": 0,
+    "n_hand_both": 480,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     240,
+     240
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": null,
+    "hand_err": 1.6134,
+    "hand_err_pen": 1.6134,
+    "hand_err_hs": 7.7094,
+    "hand_err_hs_pen": 7.7094,
+    "finger_pose_err": 5.6733,
+    "finger_angle_err_deg": 4.274,
+    "hand_size_px": 46.79
+   },
+   "lmk_cached": false,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 0.5369,
+    "lse_d": 11.2212,
+    "offset_frames": 1,
+    "lse_d_at0": 11.4249,
+    "n_windows": 195,
+    "crop_px": 180.9113054962158,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 81.2,
+   "set": "same12",
+   "realism": {
+    "realism": 2.5,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like real camera footage, with natural skin, fabric and lighting. B has smeared, warped textures, an odd orange smudge on the forehead, a rubbery striped sweater and distorted arms, which look AI-generated.",
+      "reason_choice": "A has natural detail, lighting and motion. B shows warped, smeared sleeve textures, a glitchy forehead artifact and a waxy face, which are typical of synthesis."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has a smeared, warped look with a strange forehead artifact and melted sleeve textures; B has natural detail, consistent lighting and believable motion like real camera footage.",
+      "reason_choice": "B shows natural detail, lighting and motion. A has smeared, warped textures, a glitchy forehead artifact and a rubbery body."
+     }
+    ],
+    "hands": {
+     "hands_score": 6.0,
+     "hands_score_real": 9.0,
+     "trials": [
+      {
+       "order": "gen/real",
+       "hands_gen": 6,
+       "hands_real": 9,
+       "reason": "A: soft, blurry, smooth hands with slightly waxy shading and barely any change between frames. B: sharp detail with veins, wrinkles, a ring, nails and natural finger anatomy, and it looks like real footage."
+      }
+     ]
+    }
+   }
+  },
+  "M075_P0845": {
+   "clip": "M075_P0845",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 4.242,
+    "face_nme_pen": 4.242,
+    "mouth_nme": 4.7859,
+    "mouth_nme_pen": 4.7859,
+    "iod_px": 56.76,
+    "mouth_open_corr": 0.1826,
+    "shoulder_width_px": 189.62,
+    "pose_err": 3.0876,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 3.0876,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 2.9212,
+    "shoulder_err_frames": 240,
+    "elbow_err": 3.7975,
+    "elbow_err_frames": 240,
+    "wrist_err": 5.5553,
+    "wrist_err_frames": 240,
+    "arm_err": 4.6764,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 480,
+    "n_nohand_frames": 0,
+    "n_hand_both": 446,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     240,
+     240
+    ],
+    "hand_det_rate": 0.9292,
+    "hand_extra_rate": null,
+    "hand_err": 8.0746,
+    "hand_err_pen": 14.586,
+    "hand_err_hs": 40.3229,
+    "hand_err_hs_pen": 43.3275,
+    "finger_pose_err": 28.1069,
+    "finger_angle_err_deg": 20.984,
+    "hand_size_px": 44.0
+   },
+   "lmk_cached": false,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 1.2198,
+    "lse_d": 12.4033,
+    "offset_frames": 0,
+    "lse_d_at0": 12.4033,
+    "n_windows": 195,
+    "crop_px": 166.9162533130646,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 79.1,
+   "set": "same12",
+   "realism": {
+    "realism": 3.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has smeared, waxy textures, a glitchy orange forehead patch, melted sleeves and distorted hands, so it looks synthetic. B has natural skin, fabric, hair and hand detail, and a consistent background and chair, so it looks like real camera footage.",
+      "reason_choice": "B has sharp natural detail, a lavalier mic, a tattoo and a chair that stay consistent across frames. A has smeared, warped skin and sleeves, an odd forehead glow, and melting hands, which look synthesized."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like real camera footage with natural detail, skin, hair and hands. B has smeared, waxy textures, a glitchy orange forehead artifact, warped sleeves and melted arm shapes, so it looks synthetic.",
+      "reason_choice": "A has natural detail, consistent hands, and a lavalier mic. B has a smeared face, melting sleeves, a malformed arm and hand, and a glitchy forehead."
+     }
+    ],
+    "hands": {
+     "hands_score": 3.0,
+     "hands_score_real": 8.0,
+     "trials": [
+      {
+       "order": "gen/real",
+       "hands_gen": 3,
+       "hands_real": 8,
+       "reason": "A has melted, tangled, smeared fingers in the middle frame and waxy, blob-like hands. B looks like real footage, with natural motion blur, nails, a tattoo and believable finger structure."
+      }
+     ]
+    }
+   }
+  },
+  "M076_P0845": {
+   "clip": "M076_P0845",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 4.7549,
+    "face_nme_pen": 4.7549,
+    "mouth_nme": 3.5225,
+    "mouth_nme_pen": 3.5225,
+    "iod_px": 55.65,
+    "mouth_open_corr": 0.435,
+    "shoulder_width_px": 197.38,
+    "pose_err": 2.9521,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 2.9521,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 2.2084,
+    "shoulder_err_frames": 240,
+    "elbow_err": 1.6951,
+    "elbow_err_frames": 240,
+    "wrist_err": 2.983,
+    "wrist_err_frames": 240,
+    "arm_err": 2.339,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 479,
+    "n_nohand_frames": 1,
+    "n_hand_both": 478,
+    "n_hand_extra": 1,
+    "n_hand_frames_slot": [
+     239,
+     240
+    ],
+    "hand_det_rate": 0.9979,
+    "hand_extra_rate": 1.0,
+    "hand_err": 4.4839,
+    "hand_err_pen": 4.6833,
+    "hand_err_hs": 33.6325,
+    "hand_err_hs_pen": 23.8744,
+    "finger_pose_err": 24.108,
+    "finger_angle_err_deg": 18.055,
+    "hand_size_px": 41.37
+   },
+   "lmk_cached": false,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 0.664,
+    "lse_d": 13.1149,
+    "offset_frames": -8,
+    "lse_d_at0": 13.7097,
+    "n_windows": 195,
+    "crop_px": 166.13999040603636,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 80.9,
+   "set": "same12",
+   "realism": {
+    "realism": 2.5,
+    "realism_real": 9.5,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 2,
+      "realism_real": 10,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like real camera footage with natural skin, hair, fabric and hand detail. B is clearly synthetic: smeared face, orange glitch on forehead, odd tan sleeves, warped hands and muddy texture.",
+      "reason_choice": "A has natural detail, consistent skin, hair and clothing. B has a smeared face, odd orange glitch on the forehead, and sleeves with mismatched texture and colour, which are typical synthesis artifacts."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has smeared, waxy textures, odd orange artifacts on the forehead, inconsistent arm coloring and a distorted hand, so it looks synthetic. B has natural skin, fabric, hair and hand detail, so it looks like real camera footage.",
+      "reason_choice": "B has natural detail, lighting, and consistent anatomy. A shows smeared textures, odd orange artifacts on the forehead, and warped sleeves and hands typical of synthesis."
+     }
+    ],
+    "hands": {
+     "hands_score": 5.0,
+     "hands_score_real": 8.0,
+     "trials": [
+      {
+       "order": "real/gen",
+       "hands_gen": 5,
+       "hands_real": 8,
+       "reason": "A shows sharp, natural hands with believable nails, knuckles and skin detail, and only the motion-blurred frames look slightly off. B is soft and smeared, with sausage-like fingers, merged fingers and a blobby last frame, so it looks more synthetic."
+      }
+     ]
+    }
+   }
+  },
+  "M092_P0989": {
+   "clip": "M092_P0989",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 4.2558,
+    "face_nme_pen": 4.2558,
+    "mouth_nme": 4.1455,
+    "mouth_nme_pen": 4.1455,
+    "iod_px": 52.14,
+    "mouth_open_corr": 0.5901,
+    "shoulder_width_px": 180.41,
+    "pose_err": 2.6077,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 2.6077,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 1.8567,
+    "shoulder_err_frames": 240,
+    "elbow_err": 2.46,
+    "elbow_err_frames": 240,
+    "wrist_err": 4.3469,
+    "wrist_err_frames": 240,
+    "arm_err": 3.4035,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 357,
+    "n_nohand_frames": 123,
+    "n_hand_both": 334,
+    "n_hand_extra": 5,
+    "n_hand_frames_slot": [
+     117,
+     240
+    ],
+    "hand_det_rate": 0.9356,
+    "hand_extra_rate": 0.0407,
+    "hand_err": 7.1626,
+    "hand_err_pen": 13.1437,
+    "hand_err_hs": 37.504,
+    "hand_err_hs_pen": 40.8451,
+    "finger_pose_err": 27.8695,
+    "finger_angle_err_deg": 16.373,
+    "hand_size_px": 38.61
+   },
+   "lmk_cached": false,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 0.9134,
+    "lse_d": 13.7567,
+    "offset_frames": 0,
+    "lse_d_at0": 13.7567,
+    "n_windows": 195,
+    "crop_px": 156.16429180526734,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 77.1,
+   "set": "same12",
+   "realism": {
+    "realism": 3.0,
+    "realism_real": 9.5,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 3,
+      "realism_real": 10,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has a smeared, waxy face, orange artifacts on the forehead, and blurry, distorted hands and clothing, so it looks like a synthetic render. B has sharp, natural detail, believable expressions and hands, and consistent lighting, so it looks like real camera footage.",
+      "reason_choice": "B has sharp, detailed, natural features, such as glasses, hair and a hoodie. A has a smeared, waxy, rendered look with odd face artifacts."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like real camera footage with natural detail, expressions and hands. B has a smeared, waxy face, an orange artifact on the forehead, blurry fabric and distorted hands, so it reads as a synthetic render.",
+      "reason_choice": "A has natural detail, glasses, and consistent clothing and hands. B has a smeared, waxy face, an orange artifact on the forehead, and melted sweater texture."
+     }
+    ],
+    "hands": {
+     "hands_score": 5.0,
+     "hands_score_real": 7.0,
+     "trials": [
+      {
+       "order": "gen/real",
+       "hands_gen": 5,
+       "hands_real": 7,
+       "reason": "A's hands look smooth and waxy, with fused or merged fingers in the right-hand crops and an odd thumb. B has natural skin texture, veins and motion blur, and only minor finger blending in the clasped hands."
+      }
+     ]
+    }
+   }
+  },
+  "M099_P1067": {
+   "clip": "M099_P1067",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 2.9619,
+    "face_nme_pen": 2.9619,
+    "mouth_nme": 4.804,
+    "mouth_nme_pen": 4.804,
+    "iod_px": 67.23,
+    "mouth_open_corr": 0.2946,
+    "shoulder_width_px": 227.74,
+    "pose_err": 2.4398,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 2.4398,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 2.0202,
+    "shoulder_err_frames": 240,
+    "elbow_err": 2.6915,
+    "elbow_err_frames": 240,
+    "wrist_err": 5.0406,
+    "wrist_err_frames": 240,
+    "arm_err": 3.8661,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 393,
+    "n_nohand_frames": 87,
+    "n_hand_both": 387,
+    "n_hand_extra": 9,
+    "n_hand_frames_slot": [
+     162,
+     231
+    ],
+    "hand_det_rate": 0.9847,
+    "hand_extra_rate": 0.1034,
+    "hand_err": 3.6929,
+    "hand_err_pen": 5.1632,
+    "hand_err_hs": 17.236,
+    "hand_err_hs_pen": 17.7952,
+    "finger_pose_err": 13.0527,
+    "finger_angle_err_deg": 12.496,
+    "hand_size_px": 50.66
+   },
+   "lmk_cached": false,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 1.193,
+    "lse_d": 12.2534,
+    "offset_frames": 0,
+    "lse_d_at0": 12.2534,
+    "n_windows": 195,
+    "crop_px": 189.0545903816223,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 79.5,
+   "set": "same12",
+   "realism": {
+    "realism": 2.5,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has a smeared, waxy, synthetic look with warped hair and face, and melted hands and arms. B shows natural skin texture, consistent hands with rings, and real camera detail.",
+      "reason_choice": "B has natural detail, consistent rings, lavalier mic, chair and skin texture. A has smeared, warped hair, face and hands, and an unstable body shape typical of synthesis."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A shows natural skin, hair, fabric and hand detail, so it reads as real camera footage. B has smeared, waxy textures, warped hair edges, a blended face and a mushy body outline, so it reads as synthetic.",
+      "reason_choice": "A shows natural detail, consistent hands and rings, and a stable chair. B has warped, smeared hair, a garbled face, melted clothing and morphing hands and arms, which are typical of synthesis."
+     }
+    ],
+    "hands": {
+     "hands_score": 5.0,
+     "hands_score_real": 9.0,
+     "trials": [
+      {
+       "order": "real/gen",
+       "hands_gen": 5,
+       "hands_real": 9,
+       "reason": "A shows detailed veins, rings, nails and natural motion blur, so it looks like real footage. B is smooth and waxy, and its finger shapes look slightly off, especially the clasped hands, which suggests it is synthetic."
+      }
+     ]
+    }
+   }
+  },
+  "M100_P1067": {
+   "clip": "M100_P1067",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 3.4971,
+    "face_nme_pen": 3.4971,
+    "mouth_nme": 5.3647,
+    "mouth_nme_pen": 5.3647,
+    "iod_px": 68.62,
+    "mouth_open_corr": 0.5716,
+    "shoulder_width_px": 234.95,
+    "pose_err": 2.5054,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 2.5054,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 2.6394,
+    "shoulder_err_frames": 240,
+    "elbow_err": 1.9202,
+    "elbow_err_frames": 240,
+    "wrist_err": 4.9932,
+    "wrist_err_frames": 240,
+    "arm_err": 3.4567,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 461,
+    "n_nohand_frames": 19,
+    "n_hand_both": 418,
+    "n_hand_extra": 1,
+    "n_hand_frames_slot": [
+     239,
+     222
+    ],
+    "hand_det_rate": 0.9067,
+    "hand_extra_rate": 0.0526,
+    "hand_err": 7.8034,
+    "hand_err_pen": 16.4031,
+    "hand_err_hs": 56.0142,
+    "hand_err_hs_pen": 48.4775,
+    "finger_pose_err": 37.2044,
+    "finger_angle_err_deg": 17.235,
+    "hand_size_px": 40.4
+   },
+   "lmk_cached": false,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 1.0768,
+    "lse_d": 11.3671,
+    "offset_frames": 0,
+    "lse_d_at0": 11.3671,
+    "n_windows": 195,
+    "crop_px": 190.9443579330445,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 81.1,
+   "set": "same12",
+   "realism": {
+    "realism": 2.5,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has a smeared, warped face and hair, melted arms and hands, and clear generative artifacts. B looks like real camera footage with natural skin, hair, fabric and hand detail.",
+      "reason_choice": "B has natural skin texture, a lav mic, a chair and consistent hands. A has smeared, warped face, hair and arms, and its hands change shape between frames."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like genuine camera footage with natural skin, hair, and expressions. B has smeared, warped textures, odd hair and clothing, and distorted arms and hands, so it reads as a synthetic generation.",
+      "reason_choice": "A has natural detail, consistent anatomy and lighting. B shows smeared hair, a warped face and melted clothing and hands, which are typical synthesis artifacts."
+     }
+    ],
+    "hands": {
+     "hands_score": 5.0,
+     "hands_score_real": 8.0,
+     "trials": [
+      {
+       "order": "real/gen",
+       "hands_gen": 5,
+       "hands_real": 8,
+       "reason": "A has sharp, well-defined fingers, nails and rings that stay consistent across frames, so it looks like real footage. B is blurry and the fingers merge and shift between frames, which looks synthetic."
+      }
+     ]
+    }
+   }
+  },
+  "M103_P1174": {
+   "clip": "M103_P1174",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 5.1675,
+    "face_nme_pen": 5.1675,
+    "mouth_nme": 5.4037,
+    "mouth_nme_pen": 5.4037,
+    "iod_px": 57.14,
+    "mouth_open_corr": 0.4679,
+    "shoulder_width_px": 219.82,
+    "pose_err": 1.938,
+    "pose_points_mean": 16.7,
+    "pose_err_pen": 1.938,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 1.5124,
+    "shoulder_err_frames": 240,
+    "elbow_err": 3.9011,
+    "elbow_err_frames": 240,
+    "wrist_err": 2.1677,
+    "wrist_err_frames": 240,
+    "arm_err": 3.1399,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 480,
+    "n_nohand_frames": 0,
+    "n_hand_both": 480,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     240,
+     240
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": null,
+    "hand_err": 4.0597,
+    "hand_err_pen": 4.0597,
+    "hand_err_hs": 23.3857,
+    "hand_err_hs_pen": 23.1722,
+    "finger_pose_err": 16.8173,
+    "finger_angle_err_deg": 7.583,
+    "hand_size_px": 38.28
+   },
+   "lmk_cached": false,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 1.626,
+    "lse_d": 11.1019,
+    "offset_frames": 0,
+    "lse_d_at0": 11.1019,
+    "n_windows": 195,
+    "crop_px": 190.2463511161804,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 81.3,
+   "set": "same12",
+   "realism": {
+    "realism": 4.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 4,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has smoothed, waxy face, blurry fabric and warped hands typical of generated video; B shows natural skin texture, sharp shirt details, motion blur and coherent hands like real camera footage.",
+      "reason_choice": "B has sharp detail, natural expressions, motion blur on the hands and a consistent shirt, belt and mic. A looks smeared and waxy, with a plain sweater and warped hands, which are typical of synthesis."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 4,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A shows natural skin texture, sharp details, and believable hand and face motion. B looks smoothed and waxy, with a soft, warped face, mushy hands and blurry, flattened clothing, so it reads as generated.",
+      "reason_choice": "A has natural detail, expressions and motion blur on the hands. B has a smooth, waxy face and a garment that looks warped, which points to a synthetic render."
+     }
+    ],
+    "hands": {
+     "hands_score": 5.0,
+     "hands_score_real": 9.0,
+     "trials": [
+      {
+       "order": "gen/real",
+       "hands_gen": 5,
+       "hands_real": 9,
+       "reason": "A is smooth and waxy with blurry, featureless fingers and no knuckle detail. B has natural knuckle creases, veins, a watch and realistic motion blur."
+      }
+     ]
+    }
+   }
+  },
+  "G00_P0115": {
+   "clip": "G00_P0115",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 3.216,
+    "face_nme_pen": 3.216,
+    "mouth_nme": 3.874,
+    "mouth_nme_pen": 3.874,
+    "iod_px": 53.34,
+    "mouth_open_corr": 0.4424,
+    "shoulder_width_px": 172.41,
+    "pose_err": 2.6456,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 2.6456,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 2.8796,
+    "shoulder_err_frames": 240,
+    "elbow_err": 4.4956,
+    "elbow_err_frames": 240,
+    "wrist_err": 3.2143,
+    "wrist_err_frames": 240,
+    "arm_err": 3.855,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 462,
+    "n_nohand_frames": 18,
+    "n_hand_both": 444,
+    "n_hand_extra": 2,
+    "n_hand_frames_slot": [
+     223,
+     239
+    ],
+    "hand_det_rate": 0.961,
+    "hand_extra_rate": 0.1111,
+    "hand_err": 5.9704,
+    "hand_err_pen": 9.6339,
+    "hand_err_hs": 53.1629,
+    "hand_err_hs_pen": 43.1415,
+    "finger_pose_err": 40.9046,
+    "finger_angle_err_deg": 23.276,
+    "hand_size_px": 28.36
+   },
+   "lmk_cached": false,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 0.6179,
+    "lse_d": 12.7324,
+    "offset_frames": 0,
+    "lse_d_at0": 12.7324,
+    "n_windows": 195,
+    "crop_px": 155.83201906013488,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 73.3,
+   "set": "gesture8",
+   "realism": {
+    "realism": 3.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has smeared, rendered-looking skin, a mismatched orange patch on the forehead, and a waxy, warped shirt texture, so it looks synthetic. B has natural fabric, sharp detail and plausible motion blur, so it looks like real camera footage.",
+      "reason_choice": "B shows natural fabric, a Nike logo, a lavalier mic and consistent detail. A has smeared skin patches, orange face artifacts and mismatched sleeve and arm textures, which look synthesised."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like a real camera capture, with natural skin, fabric and motion blur. B has a smeared orange patch on the forehead, a mismatched skin tone on the arms, a warped shirt texture and unnatural hands, so it looks synthetic.",
+      "reason_choice": "A has natural detail, consistent clothing and skin texture. B shows synthetic artifacts: smeared forearm textures, orange smudge on the forehead, warped shirt pattern."
+     }
+    ],
+    "hands": {
+     "hands_score": 4.0,
+     "hands_score_real": 8.0,
+     "trials": [
+      {
+       "order": "real/gen",
+       "hands_gen": 4,
+       "hands_real": 8,
+       "reason": "A shows natural motion blur and plausible finger anatomy; B has smooth, waxy hands with merged, oddly shaped fingers in several frames."
+      }
+     ]
+    }
+   }
+  },
+  "G01_P0485": {
+   "clip": "G01_P0485",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 3.8815,
+    "face_nme_pen": 3.8815,
+    "mouth_nme": 6.157,
+    "mouth_nme_pen": 6.157,
+    "iod_px": 59.06,
+    "mouth_open_corr": 0.6243,
+    "shoulder_width_px": 215.76,
+    "pose_err": 2.3687,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 2.3687,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 1.8951,
+    "shoulder_err_frames": 240,
+    "elbow_err": 2.7348,
+    "elbow_err_frames": 240,
+    "wrist_err": 5.2078,
+    "wrist_err_frames": 240,
+    "arm_err": 3.9713,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 480,
+    "n_nohand_frames": 0,
+    "n_hand_both": 480,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     240,
+     240
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": null,
+    "hand_err": 4.7281,
+    "hand_err_pen": 4.7281,
+    "hand_err_hs": 20.5863,
+    "hand_err_hs_pen": 20.5863,
+    "finger_pose_err": 18.2363,
+    "finger_angle_err_deg": 15.411,
+    "hand_size_px": 47.16
+   },
+   "lmk_cached": false,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 0.7237,
+    "lse_d": 9.3709,
+    "offset_frames": 0,
+    "lse_d_at0": 9.3709,
+    "n_windows": 195,
+    "crop_px": 177.03764749145506,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 75.5,
+   "set": "gesture8",
+   "realism": {
+    "realism": 2.0,
+    "realism_real": 9.5,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has smeared, stripy sweater and arm textures, warped hairline and face, and melted hands, so it looks like a synthetic render. B has natural skin, fabric detail, jewelry and lighting, so it looks like real camera footage.",
+      "reason_choice": "B shows natural detail, consistent shirt print and hands, and real motion. A has smeared striped sleeves, warped face and hair, and distorted hands, which are typical of synthesis."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 2,
+      "realism_real": 10,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like genuine camera footage with natural detail and texture. B has smeared, warped sweater and arm textures, a distorted face and hairline, and malformed hands, so it is clearly synthetic.",
+      "reason_choice": "A shows natural detail and consistent fabric and hands. B has smeared, warped sleeves, a distorted face and hairline, and melted textures typical of synthesis."
+     }
+    ],
+    "hands": {
+     "hands_score": 5.0,
+     "hands_score_real": 9.0,
+     "trials": [
+      {
+       "order": "real/gen",
+       "hands_gen": 5,
+       "hands_real": 9,
+       "reason": "A has sharp skin texture, veins, ring and nails, and consistent anatomy. B is blurry and smooth, with a slightly odd knuckle and fused-looking fingers, so it looks softer and less real."
+      }
+     ]
+    }
+   }
+  },
+  "G02_P0845": {
+   "clip": "G02_P0845",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 5.5798,
+    "face_nme_pen": 5.5798,
+    "mouth_nme": 5.4167,
+    "mouth_nme_pen": 5.4167,
+    "iod_px": 46.74,
+    "mouth_open_corr": 0.4604,
+    "shoulder_width_px": 157.29,
+    "pose_err": 3.0567,
+    "pose_points_mean": 16.77,
+    "pose_err_pen": 3.0567,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 2.688,
+    "shoulder_err_frames": 240,
+    "elbow_err": 3.8487,
+    "elbow_err_frames": 240,
+    "wrist_err": 5.125,
+    "wrist_err_frames": 240,
+    "arm_err": 4.5088,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 431,
+    "n_nohand_frames": 49,
+    "n_hand_both": 419,
+    "n_hand_extra": 3,
+    "n_hand_frames_slot": [
+     238,
+     193
+    ],
+    "hand_det_rate": 0.9722,
+    "hand_extra_rate": 0.0612,
+    "hand_err": 8.6533,
+    "hand_err_pen": 11.1966,
+    "hand_err_hs": 65.8351,
+    "hand_err_hs_pen": 46.0153,
+    "finger_pose_err": 39.4353,
+    "finger_angle_err_deg": 29.919,
+    "hand_size_px": 34.19
+   },
+   "lmk_cached": false,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 0.7694,
+    "lse_d": 12.163,
+    "offset_frames": -15,
+    "lse_d_at0": 12.8689,
+    "n_windows": 195,
+    "crop_px": 143.6147659778595,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 73.2,
+   "set": "gesture8",
+   "realism": {
+    "realism": 3.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like real camera footage, with natural skin, hair, fabric and hands. B has a waxy, smeared face, an orange glitch on the forehead, blurry textures and warped sleeves and hands, so it looks synthetic.",
+      "reason_choice": "A has natural detail: tattoo, crisp hands, earrings and expressive eyes. B has a smeared face, odd orange forehead artifact, waxy skin and warped arm/sleeve textures, which look synthetic."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has a waxy, smeared face, odd orange artifacts on the forehead, and warped, blurry hands and sleeves, so it looks synthetic. B has natural skin, fabric, hair and hand detail with real camera quality.",
+      "reason_choice": "B shows a natural, detailed person with consistent lighting, a tattoo and fine hair. A has a smeared, waxy face, an odd orange artifact on the forehead and blurry hands, which look synthesised."
+     }
+    ],
+    "hands": {
+     "hands_score": 5.0,
+     "hands_score_real": 8.0,
+     "trials": [
+      {
+       "order": "gen/real",
+       "hands_gen": 5,
+       "hands_real": 8,
+       "reason": "A looks soft and smeared with blobby, ambiguous fingers (some frames look fused or melted). B has natural motion blur, tattoo and nail polish details, and plausible finger structure."
+      }
+     ]
+    }
+   }
+  },
+  "G03_P1067": {
+   "clip": "G03_P1067",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 4.3797,
+    "face_nme_pen": 4.3797,
+    "mouth_nme": 5.9644,
+    "mouth_nme_pen": 5.9644,
+    "iod_px": 61.18,
+    "mouth_open_corr": 0.4957,
+    "shoulder_width_px": 211.06,
+    "pose_err": 2.387,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 2.387,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 1.9856,
+    "shoulder_err_frames": 240,
+    "elbow_err": 2.6738,
+    "elbow_err_frames": 240,
+    "wrist_err": 4.8783,
+    "wrist_err_frames": 240,
+    "arm_err": 3.7761,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 462,
+    "n_nohand_frames": 18,
+    "n_hand_both": 444,
+    "n_hand_extra": 4,
+    "n_hand_frames_slot": [
+     223,
+     239
+    ],
+    "hand_det_rate": 0.961,
+    "hand_extra_rate": 0.2222,
+    "hand_err": 6.2755,
+    "hand_err_pen": 9.9271,
+    "hand_err_hs": 38.5522,
+    "hand_err_hs_pen": 36.7755,
+    "finger_pose_err": 28.5568,
+    "finger_angle_err_deg": 11.01,
+    "hand_size_px": 38.82
+   },
+   "lmk_cached": false,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 1.8722,
+    "lse_d": 11.0142,
+    "offset_frames": 0,
+    "lse_d_at0": 11.0142,
+    "n_windows": 195,
+    "crop_px": 173.47450350952147,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 74.8,
+   "set": "gesture8",
+   "realism": {
+    "realism": 2.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has a smeared, waxy, warped face with odd forehead artifacts, melted hands and a texture-like shirt, so it is clearly synthetic. B shows natural skin, jewelry, a chair and motion-blurred hair, and looks like real camera footage.",
+      "reason_choice": "B has natural detail, consistent chair, rings and hair motion. A shows warped, smeared textures, a distorted face and melting hands, which point to synthesis."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like real camera footage with natural skin, hair and motion blur. B has a smeared, painterly texture, a warped face with an orange artifact on the forehead, and distorted hands and body, so it is clearly synthetic.",
+      "reason_choice": "A has natural detail, coherent hair and motion blur; B shows warped textures, smeared face and hands, and artifacts typical of synthesis."
+     }
+    ],
+    "hands": {
+     "hands_score": 5.0,
+     "hands_score_real": 8.0,
+     "trials": [
+      {
+       "order": "gen/real",
+       "hands_gen": 5,
+       "hands_real": 8,
+       "reason": "A is soft and smooth with blurry, slightly merged fingers and a waxy look; B has sharp detail, rings, nails, veins and natural wrinkles that look like real footage."
+      }
+     ]
+    }
+   }
+  },
+  "G04_P0989": {
+   "clip": "G04_P0989",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 4.9642,
+    "face_nme_pen": 4.9642,
+    "mouth_nme": 5.6746,
+    "mouth_nme_pen": 5.6746,
+    "iod_px": 52.7,
+    "mouth_open_corr": 0.1837,
+    "shoulder_width_px": 183.4,
+    "pose_err": 3.0201,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 3.0201,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 2.3828,
+    "shoulder_err_frames": 240,
+    "elbow_err": 4.9371,
+    "elbow_err_frames": 240,
+    "wrist_err": 5.2494,
+    "wrist_err_frames": 240,
+    "arm_err": 5.0933,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 479,
+    "n_nohand_frames": 1,
+    "n_hand_both": 457,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     240,
+     239
+    ],
+    "hand_det_rate": 0.9541,
+    "hand_extra_rate": 0.0,
+    "hand_err": 5.5245,
+    "hand_err_pen": 9.8637,
+    "hand_err_hs": 29.3536,
+    "hand_err_hs_pen": 31.1471,
+    "finger_pose_err": 23.7237,
+    "finger_angle_err_deg": 17.142,
+    "hand_size_px": 40.6
+   },
+   "lmk_cached": false,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 1.5959,
+    "lse_d": 12.474,
+    "offset_frames": 0,
+    "lse_d_at0": 12.474,
+    "n_windows": 195,
+    "crop_px": 156.01417360305786,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 72.4,
+   "set": "gesture8",
+   "realism": {
+    "realism": 2.5,
+    "realism_real": 9.5,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 2,
+      "realism_real": 10,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A is a smeared, waxy rendered avatar with orange artifacts, warped hands and a blurry sweater. B is a real camera shot with natural detail, motion blur and fabric texture.",
+      "reason_choice": "B has natural detail, sharp glasses, real motion blur and consistent clothing. A looks like a smooth, warped render with a glowing forehead artifact and a melted face and sweater."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like genuine camera footage with natural detail and motion blur. B has a smeared, waxy face, orange artifacts on the forehead, a seamless sweater and distorted hands, so it looks synthetic.",
+      "reason_choice": "A has crisp detail, natural motion blur, and a consistent jacket, glasses and shirt buttons. B is a smeared, warped render with no glasses, orange artifacts on the forehead, and a melted sweater."
+     }
+    ],
+    "hands": {
+     "hands_score": 5.0,
+     "hands_score_real": 8.0,
+     "trials": [
+      {
+       "order": "real/gen",
+       "hands_gen": 5,
+       "hands_real": 8,
+       "reason": "A has natural finger structure, skin detail and plausible motion blur; B is smoother and blurrier, with fused or waxy fingers and a doughy look."
+      }
+     ]
+    }
+   }
+  },
+  "G05_P0217": {
+   "clip": "G05_P0217",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 5.2652,
+    "face_nme_pen": 5.2652,
+    "mouth_nme": 5.6797,
+    "mouth_nme_pen": 5.6797,
+    "iod_px": 53.12,
+    "mouth_open_corr": 0.1447,
+    "shoulder_width_px": 188.95,
+    "pose_err": 2.9803,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 2.9803,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 1.8301,
+    "shoulder_err_frames": 240,
+    "elbow_err": 3.1413,
+    "elbow_err_frames": 240,
+    "wrist_err": 3.1409,
+    "wrist_err_frames": 240,
+    "arm_err": 3.1411,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 273,
+    "n_nohand_frames": 207,
+    "n_hand_both": 156,
+    "n_hand_extra": 108,
+    "n_hand_frames_slot": [
+     71,
+     202
+    ],
+    "hand_det_rate": 0.5714,
+    "hand_extra_rate": 0.5217,
+    "hand_err": 8.2215,
+    "hand_err_pen": 47.5551,
+    "hand_err_hs": 50.3285,
+    "hand_err_hs_pen": 70.4203,
+    "finger_pose_err": 37.7081,
+    "finger_angle_err_deg": 36.174,
+    "hand_size_px": 34.53
+   },
+   "lmk_cached": false,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 0.8545,
+    "lse_d": 11.1868,
+    "offset_frames": -2,
+    "lse_d_at0": 11.4504,
+    "n_windows": 195,
+    "crop_px": 164.70641030502318,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 71.9,
+   "set": "gesture8",
+   "realism": {
+    "realism": 2.5,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has a smeared, waxy face, an odd orange glow on the forehead, and sleeves with unnatural gradient colouring and blurred hands, so it reads as a synthetic render. B shows sharp curly hair, natural fabric texture and believable hand motion, so it looks like real camera footage.",
+      "reason_choice": "B shows sharp, natural detail and consistent hair, clothing and hands. A has smeared, warped features, a glowing forehead artifact, odd orange sleeves and melted hands, which look synthetic."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like real camera footage, with natural curly hair, fabric texture, hands and expressions. B has a smeared, warped face, an orange glow on the forehead, sleeves with an unnatural brown gradient, and blurry hands, so it reads as a generated or CG render.",
+      "reason_choice": "A has natural curly hair, sharp detail and consistent anatomy. B shows smeared face, orange glitch on the forehead, and odd tan-tinted forearms."
+     }
+    ],
+    "hands": {
+     "hands_score": 4.0,
+     "hands_score_real": 7.0,
+     "trials": [
+      {
+       "order": "real/gen",
+       "hands_gen": 4,
+       "hands_real": 7,
+       "reason": "A has stable, plausible fisted hands with natural knuckles, apart from motion blur in the last column. B has clasped hands with fused, ambiguous fingers that change from frame to frame, and the last column looks melted."
+      }
+     ]
+    }
+   }
+  },
+  "G06_P0370": {
+   "clip": "G06_P0370",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 6.2725,
+    "face_nme_pen": 6.2725,
+    "mouth_nme": 10.0536,
+    "mouth_nme_pen": 10.0536,
+    "iod_px": 54.09,
+    "mouth_open_corr": 0.4578,
+    "shoulder_width_px": 186.01,
+    "pose_err": 4.723,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 4.723,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 2.2847,
+    "shoulder_err_frames": 240,
+    "elbow_err": 3.9737,
+    "elbow_err_frames": 240,
+    "wrist_err": 24.3947,
+    "wrist_err_frames": 240,
+    "arm_err": 14.1842,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 319,
+    "n_nohand_frames": 161,
+    "n_hand_both": 211,
+    "n_hand_extra": 53,
+    "n_hand_frames_slot": [
+     225,
+     94
+    ],
+    "hand_det_rate": 0.6614,
+    "hand_extra_rate": 0.3292,
+    "hand_err": 5.3827,
+    "hand_err_pen": 37.4162,
+    "hand_err_hs": 26.1399,
+    "hand_err_hs_pen": 49.6689,
+    "finger_pose_err": 19.3813,
+    "finger_angle_err_deg": 29.539,
+    "hand_size_px": 42.13
+   },
+   "lmk_cached": false,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 0.609,
+    "lse_d": 12.5794,
+    "offset_frames": -15,
+    "lse_d_at0": 13.0427,
+    "n_windows": 195,
+    "crop_px": 172.0079973745346,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 71.5,
+   "set": "gesture8",
+   "realism": {
+    "realism": 2.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has warped, smeared arms, a glitchy forehead and texture artifacts, so it looks clearly synthetic. B has coherent anatomy, fabric and a chair, with natural motion and lighting, so it looks like real footage.",
+      "reason_choice": "B has coherent anatomy, a consistent shirt pattern and natural hand-to-face motion. A shows smeared, warped arms, a distorted forehead and a melting shirt texture, which are typical of synthesis."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like real camera footage with natural texture, fabric and hand motion. B has smeared, warped skin, arms and shirt, a glitchy forehead and melting limbs, so it is clearly synthetic.",
+      "reason_choice": "B shows warped arms, smeared textures, and a distorted face and hairline. A has coherent anatomy and fabric detail across frames."
+     }
+    ],
+    "hands": {
+     "hands_score": 4.0,
+     "hands_score_real": 6.0,
+     "trials": [
+      {
+       "order": "real/gen",
+       "hands_gen": 4,
+       "hands_real": 6,
+       "reason": "A has mostly plausible fingers and nails with only slight softness and some stacked-finger ambiguity; B is blurrier with merged, stubby fingers and a warped lower hand."
+      }
+     ]
+    }
+   }
+  },
+  "G07_P1174": {
+   "clip": "G07_P1174",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 5.936,
+    "face_nme_pen": 5.936,
+    "mouth_nme": 5.7414,
+    "mouth_nme_pen": 5.7414,
+    "iod_px": 48.77,
+    "mouth_open_corr": 0.3045,
+    "shoulder_width_px": 191.88,
+    "pose_err": 2.0743,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 2.0743,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 1.6556,
+    "shoulder_err_frames": 240,
+    "elbow_err": 4.8239,
+    "elbow_err_frames": 240,
+    "wrist_err": 3.5103,
+    "wrist_err_frames": 240,
+    "arm_err": 4.1671,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 478,
+    "n_nohand_frames": 2,
+    "n_hand_both": 478,
+    "n_hand_extra": 1,
+    "n_hand_frames_slot": [
+     238,
+     240
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": 0.5,
+    "hand_err": 6.3661,
+    "hand_err_pen": 6.3661,
+    "hand_err_hs": 50.2141,
+    "hand_err_hs_pen": 40.8071,
+    "finger_pose_err": 35.315,
+    "finger_angle_err_deg": 21.396,
+    "hand_size_px": 33.08
+   },
+   "lmk_cached": false,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 0.8911,
+    "lse_d": 12.9083,
+    "offset_frames": 0,
+    "lse_d_at0": 12.9083,
+    "n_windows": 195,
+    "crop_px": 164.43426015090944,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 75.4,
+   "set": "gesture8",
+   "realism": {
+    "realism": 3.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has smeared, warped face and hair, blurry ghosting sleeves and hands, and a waxy look. B has sharp natural detail, consistent fabric folds and realistic camera footage.",
+      "reason_choice": "B has natural detail, consistent shirt, buttons, and hands. A shows smeared faces, blurred sleeves, and warped hands typical of synthesis."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 3,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like real camera footage with natural detail, fabric folds and hand motion. B has a smeared, warped face, ghosting on the sleeves, melted hands and a plastic skin look, which marks it as generated.",
+      "reason_choice": "A has natural detail, consistent shirt and hands. B has a warped face, smeared sleeves and blurry, melting hands, which look synthetic."
+     }
+    ],
+    "hands": {
+     "hands_score": 3.0,
+     "hands_score_real": 8.0,
+     "trials": [
+      {
+       "order": "gen/real",
+       "hands_gen": 3,
+       "hands_real": 8,
+       "reason": "A has melted, lumpy, malformed fingers and blobby shapes in the middle frames; B shows natural knuckles, veins and finger proportions, with only plausible motion blur."
+      }
+     ]
+    }
+   }
+  }
+ }
+}

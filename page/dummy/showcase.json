@@ -1,0 +1,1 @@
+{"runs": [{"run": "enc_wavlm", "title": "WavLM encoder", "note": "best sync"}, {"run": "inj_cross", "title": "Cross-attention"}, {"run": "look_0", "title": "No look-ahead", "note": "worst"}], "clips": ["M000_P0115", "M009_P0217", "M023_P0370"]}

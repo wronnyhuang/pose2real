@@ -1,0 +1,1 @@
+- Zero look-ahead hurt sync.

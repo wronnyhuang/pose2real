@@ -1,0 +1,13 @@
+# GPU side. Tested: Python 3.12, CUDA 12.8, RTX 5090 32 GB (training/bench) and RTX A5000 24 GB.
+# pip install torch==2.8.0 torchvision --index-url https://download.pytorch.org/whl/cu128
+diffusers==0.43.0
+peft==0.21.2
+transformers>=4.50          # facebook/hubert-base-ls960 (audio features)
+accelerate
+lpips==0.1.4
+opencv-python-headless==5.0.0.93
+soundfile
+numpy
+pillow
+huggingface_hub
+# eval / data prep (CPU venv): see ../render2real/requirements-eval.txt  (+ python_speech_features==0.6 for SyncNet)

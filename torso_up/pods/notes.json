@@ -1,0 +1,1 @@
+{"a": "RTX 3090: low-resolution and no-hand-loss ablations", "b": "RTX 4090: base, no-hand-landmarks, ControlNet, heat-map encoder", "c": "unusable network (could not receive the dataset); terminated before any training", "d": "RTX 4090: best configuration (v2, v3) and hand discriminator"}

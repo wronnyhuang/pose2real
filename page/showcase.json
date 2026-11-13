@@ -1,0 +1,8 @@
+{"headline":[{"run":"v3_seen","title":"Best: seen identity","note":"all landmarks + audio"},
+             {"run":"v4_more","title":"Best: unseen identity","note":"all landmarks + audio"},
+             {"run":"v2__alips_la0","title":"Lips from audio only","note":"unseen identity, lower face hidden"}],
+ "runs":[{"run":"v3_seen","title":"Best: seen identity","note":"The model trained on other footage of this person. All landmarks + audio."},
+         {"run":"v4_more","title":"Unseen identity","note":"Never saw this person; only a reference photo. All landmarks + audio."},
+         {"run":"v2__alips_la0","title":"Lips from audio","note":"Unseen identity. Lower-face landmarks hidden; the mouth comes from the audio."},
+         {"run":"base","title":"First run","note":"Your design as first built: 126 clips, 35 minutes."}],
+ "clips":["M000_P0115","M075_P0845","M023_P0370","M103_P1174"]}

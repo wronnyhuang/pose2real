@@ -1,0 +1,727 @@
+{
+ "run": "inj_early",
+ "dir": "$WORK/runs/inj_early/out",
+ "made": "2026-11-13 03:45:01",
+ "sync_box": "mp",
+ "inputs": "ROOT/data/clips",
+ "secs_metrics": 0.9,
+ "secs_total": 76.3,
+ "mean": {
+  "n_clips": 12,
+  "n_failed": 0,
+  "syncnet": {
+   "lse_c": 2.2738,
+   "lse_d": 10.4051,
+   "offset_frames": -0.1667,
+   "abs_offset_frames": 0.6667,
+   "lse_d_at0": 10.7088
+  },
+  "landmarks": {
+   "face_nme": 3.4702,
+   "mouth_nme": 2.5609,
+   "pose_err": 3.9159,
+   "mouth_open_corr": 0.6031,
+   "det_rate": 1.0,
+   "face_nme_pen": 3.4702,
+   "mouth_nme_pen": 2.5609,
+   "pose_err_pen": 3.9159,
+   "pose_det_rate": 1.0
+  },
+  "realism": {
+   "clips": 12,
+   "trials": 24,
+   "score_1_10": 1.667,
+   "score_real_1_10": 9.0,
+   "fooled_rate": 0.0,
+   "errors": 0,
+   "order_consistency": 1.0,
+   "model": "sonnet"
+  }
+ },
+ "clips": {
+  "M000_P0115": {
+   "clip": "M000_P0115",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 3.3267,
+    "face_nme_pen": 3.3267,
+    "mouth_nme": 2.9897,
+    "mouth_nme_pen": 2.9897,
+    "mouth_open_corr": 0.5231,
+    "shoulder_width_px": 364.19,
+    "pose_points_mean": 12.14,
+    "pose_err": 4.0539,
+    "pose_err_pen": 4.0539,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 2.8686,
+    "lse_d": 10.0901,
+    "offset_frames": 1,
+    "lse_d_at0": 10.3799,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.7,
+   "realism": {
+    "realism": 1.5,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 1,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has a heavily distorted, smeared, ghosted face with melting features and artifacts. B looks like natural camera footage with consistent detail and plausible mouth motion.",
+      "reason_choice": "Strip B shows a natural, consistent face with fine skin detail and stable features. Strip A has smeared, warped facial features, ghosting and artifacts, which points to synthesis."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like a genuine camera capture with natural skin, hair and mouth motion. B is a smeared, warped face with ghosting, a melted hand-like artifact near the chin, and a distorted head and hair.",
+      "reason_choice": "Strip A shows a sharp, natural face with consistent detail. Strip B has heavy warping, ghosting and smeared artifacts typical of synthesis."
+     }
+    ]
+   }
+  },
+  "M001_P0115": {
+   "clip": "M001_P0115",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 3.3861,
+    "face_nme_pen": 3.3861,
+    "mouth_nme": 2.4373,
+    "mouth_nme_pen": 2.4373,
+    "mouth_open_corr": 0.7492,
+    "shoulder_width_px": 348.68,
+    "pose_points_mean": 12.3,
+    "pose_err": 3.6737,
+    "pose_err_pen": 3.6737,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 2.4071,
+    "lse_d": 10.9856,
+    "offset_frames": -1,
+    "lse_d_at0": 11.9985,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.6,
+   "realism": {
+    "realism": 1.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 1,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like a real camera video with natural skin, texture and a clear lavalier mic. B has a smeared, warped face with ghosting, blur, a stray hand-like artifact and broken geometry, so it is clearly synthetic.",
+      "reason_choice": "Strip A shows natural skin texture, consistent details and a sharp lavalier mic. Strip B has a warped, smeared face with ghosting, a misplaced pink artifact and melting features."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 1,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has a smeared, warped, ghosted face with broken geometry and a different background and clothing. B is a natural, sharp, consistent camera shot.",
+      "reason_choice": "Strip B shows a coherent person with natural skin texture, a stable shirt and a Nike logo. Strip A has a warped, smeared face with ghosted features and melting artifacts."
+     }
+    ]
+   }
+  },
+  "M009_P0217": {
+   "clip": "M009_P0217",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 3.3537,
+    "face_nme_pen": 3.3537,
+    "mouth_nme": 2.1798,
+    "mouth_nme_pen": 2.1798,
+    "mouth_open_corr": 0.717,
+    "shoulder_width_px": 377.0,
+    "pose_points_mean": 11.23,
+    "pose_err": 4.1598,
+    "pose_err_pen": 4.1598,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 1.4564,
+    "lse_d": 9.0104,
+    "offset_frames": 0,
+    "lse_d_at0": 9.0104,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.6,
+   "realism": {
+    "realism": 2.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has smeared, warped facial features, blurry artifacts and inconsistent hair/face geometry between frames; B shows sharp, natural curly hair, skin and consistent motion like real camera footage.",
+      "reason_choice": "Strip B has sharp, natural curly hair, skin and facial detail. Strip A is blurry and warped, with a melting face, distorted eyes and a smeared neck."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like natural camera footage with crisp curly hair and consistent skin. B has a smeared, warped face, melted features, a dark ghost hairline and a blurry neck, so it looks clearly synthetic.",
+      "reason_choice": "Strip A has sharp, natural curls and consistent facial detail; strip B shows smeared, warped face, melted hair and eye artifacts typical of synthesis."
+     }
+    ]
+   }
+  },
+  "M023_P0370": {
+   "clip": "M023_P0370",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 3.9364,
+    "face_nme_pen": 3.9364,
+    "mouth_nme": 3.2167,
+    "mouth_nme_pen": 3.2167,
+    "mouth_open_corr": 0.5697,
+    "shoulder_width_px": 353.55,
+    "pose_points_mean": 11.09,
+    "pose_err": 6.5963,
+    "pose_err_pen": 6.5963,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 1.8937,
+    "lse_d": 10.2391,
+    "offset_frames": -1,
+    "lse_d_at0": 10.6458,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.6,
+   "realism": {
+    "realism": 1.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 1,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like natural camera footage with a consistent face. B has a split, ghosted double face, smeared textures and heavy artifacts.",
+      "reason_choice": "Strip A shows a coherent, natural face with consistent detail; strip B has a ghosted, split, warped face with heavy generative artifacts."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 1,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A shows a heavily distorted, ghosted double-face with melted, blurry features; B looks like natural camera footage with consistent detail.",
+      "reason_choice": "Strip B shows a coherent, natural person with consistent detail. Strip A has a ghosted, split face with warped, melded artifacts typical of synthesis."
+     }
+    ]
+   }
+  },
+  "M037_P0485": {
+   "clip": "M037_P0485",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 3.7152,
+    "face_nme_pen": 3.7152,
+    "mouth_nme": 2.3856,
+    "mouth_nme_pen": 2.3856,
+    "mouth_open_corr": 0.0948,
+    "shoulder_width_px": 325.06,
+    "pose_points_mean": 13.0,
+    "pose_err": 4.7144,
+    "pose_err_pen": 4.7144,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 0.8333,
+    "lse_d": 11.876,
+    "offset_frames": 1,
+    "lse_d_at0": 12.0297,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.7,
+   "realism": {
+    "realism": 2.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has a melting, warped face, distorted eyes, smeared texture and flickering artifacts. B has stable, natural skin, hair and expressions like real camera footage.",
+      "reason_choice": "Strip B has natural detail, consistent features and stable identity. Strip A has warped, melting eyes and face, a smeared texture and a drifting identity, which are typical synthesis artifacts."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like natural camera footage with consistent detail and expressions; B has a heavily warped, smeared face with misaligned eyes, glitchy artifacts and a distorted jaw/neck.",
+      "reason_choice": "Strip A has natural detail and consistent facial features. Strip B has warped, smeared facial features, misaligned eyes and a distorted jaw, which are typical of synthesis."
+     }
+    ]
+   }
+  },
+  "M038_P0485": {
+   "clip": "M038_P0485",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 3.8598,
+    "face_nme_pen": 3.8598,
+    "mouth_nme": 1.4883,
+    "mouth_nme_pen": 1.4883,
+    "mouth_open_corr": 0.6615,
+    "shoulder_width_px": 334.1,
+    "pose_points_mean": 12.97,
+    "pose_err": 3.4842,
+    "pose_err_pen": 3.4842,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 1.5838,
+    "lse_d": 9.9119,
+    "offset_frames": 1,
+    "lse_d_at0": 10.1243,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.6,
+   "realism": {
+    "realism": 2.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has a warped, smeared face with distorted eyes, blotchy skin and a mismatched hairline. B has natural skin texture, consistent hair and clothing, and believable motion.",
+      "reason_choice": "Strip B has natural detail and consistent features; strip A has a warped, smeared face with melted texture and artifacts."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like natural camera footage with real skin texture and hair; B has a smeared, warped face with mismatched skin tones, blurry eyes and a hard neck edge, plus artifacts at the top left, so it's clearly synthetic.",
+      "reason_choice": "Strip A has natural skin texture, hair detail and clothing; strip B shows a warped, blurry face with a mismatched face/hair boundary and a distorted neck, typical of synthesis."
+     }
+    ]
+   }
+  },
+  "M075_P0845": {
+   "clip": "M075_P0845",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 3.7277,
+    "face_nme_pen": 3.7277,
+    "mouth_nme": 3.04,
+    "mouth_nme_pen": 3.04,
+    "mouth_open_corr": 0.4802,
+    "shoulder_width_px": 379.97,
+    "pose_points_mean": 12.15,
+    "pose_err": 3.2404,
+    "pose_err_pen": 3.2404,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 1.5255,
+    "lse_d": 11.4371,
+    "offset_frames": 0,
+    "lse_d_at0": 11.4371,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.0,
+   "realism": {
+    "realism": 1.5,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 1,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has a badly warped, smeared face with distorted eyes and a melting mouth, so it's clearly synthetic. B has natural skin, hair, earrings and lip motion, and looks like real camera footage.",
+      "reason_choice": "Strip B shows a coherent, natural face with consistent details. Strip A has severe warping and melting facial features, which points to synthesis."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like natural camera footage with coherent face, hair and lighting. B has a badly warped, smeared face with misplaced features, a blurry low-res look and artifacts.",
+      "reason_choice": "Strip A shows a sharp, coherent face with natural motion; strip B has a warped, melting face with distorted features and artifacts."
+     }
+    ]
+   }
+  },
+  "M076_P0845": {
+   "clip": "M076_P0845",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 3.033,
+    "face_nme_pen": 3.033,
+    "mouth_nme": 2.4651,
+    "mouth_nme_pen": 2.4651,
+    "mouth_open_corr": 0.602,
+    "shoulder_width_px": 383.05,
+    "pose_points_mean": 12.0,
+    "pose_err": 3.3529,
+    "pose_err_pen": 3.3529,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 1.5979,
+    "lse_d": 11.6836,
+    "offset_frames": -3,
+    "lse_d_at0": 13.2533,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.0,
+   "realism": {
+    "realism": 1.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 1,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like natural camera footage with coherent face, hair and earrings; B has a melted, distorted face with warped features and heavy artifacts.",
+      "reason_choice": "Strip A shows a coherent, sharp, natural face with consistent details. Strip B has a warped, melted face with distorted features and blocky artifacts."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 1,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has a badly distorted, melting face with broken eyes, nose and mouth and heavy artifacts. B is a natural, consistent real-looking person with plausible motion and detail.",
+      "reason_choice": "Strip B shows natural, coherent facial detail and motion. Strip A has a warped, smeared face with distorted eyes, nose and mouth, which is typical of synthesis."
+     }
+    ]
+   }
+  },
+  "M092_P0989": {
+   "clip": "M092_P0989",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 3.2466,
+    "face_nme_pen": 3.2466,
+    "mouth_nme": 2.4424,
+    "mouth_nme_pen": 2.4424,
+    "mouth_open_corr": 0.3608,
+    "shoulder_width_px": 318.12,
+    "pose_points_mean": 13.0,
+    "pose_err": 4.2413,
+    "pose_err_pen": 4.2413,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 3.2508,
+    "lse_d": 10.8366,
+    "offset_frames": 0,
+    "lse_d_at0": 10.8366,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.0,
+   "realism": {
+    "realism": 2.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has a heavily warped, smeared face with melting glasses and distorted features, so it reads as an artifact-ridden generated face. B is sharp, with natural expressions, consistent glasses and normal skin and hair detail.",
+      "reason_choice": "Strip B shows sharp, coherent natural face with consistent glasses and expressions; strip A has warped, smeared facial features and melting artifacts typical of synthesis."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like a real camera capture with natural detail and expressions. B has a smeared, warped face, melted glasses and blurry artifacts, so it is clearly synthetic.",
+      "reason_choice": "Strip A is sharp, natural, and consistent. Strip B has a warped, smeared face with distorted glasses and unstable identity, typical of synthesis."
+     }
+    ]
+   }
+  },
+  "M099_P1067": {
+   "clip": "M099_P1067",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 2.8278,
+    "face_nme_pen": 2.8278,
+    "mouth_nme": 2.3278,
+    "mouth_nme_pen": 2.3278,
+    "mouth_open_corr": 0.7988,
+    "shoulder_width_px": 356.52,
+    "pose_points_mean": 12.76,
+    "pose_err": 3.7299,
+    "pose_err_pen": 3.7299,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 3.6702,
+    "lse_d": 10.0333,
+    "offset_frames": 0,
+    "lse_d_at0": 10.0333,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.0,
+   "realism": {
+    "realism": 2.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like natural camera footage with consistent detail, hands, and texture; B has a warped, smeared face, melting features, and blurry artifacts around the neck and clothes.",
+      "reason_choice": "Strip A has natural, sharp detail and consistent hand and face motion; strip B has warped, smeared, melting facial geometry typical of synthesis."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has heavily warped, smeared, unstable facial features and a melting neck and shoulders, so it is clearly synthetic. B has natural skin texture, consistent hair and clothing, and a real hand gesture, so it looks like genuine camera footage.",
+      "reason_choice": "Strip B is sharp and coherent, with natural expressions and a hand gesture. Strip A has a warped, smeared face that changes shape between frames, and distorted eyes and neck."
+     }
+    ]
+   }
+  },
+  "M100_P1067": {
+   "clip": "M100_P1067",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 2.7814,
+    "face_nme_pen": 2.7814,
+    "mouth_nme": 2.231,
+    "mouth_nme_pen": 2.231,
+    "mouth_open_corr": 0.8939,
+    "shoulder_width_px": 361.62,
+    "pose_points_mean": 12.99,
+    "pose_err": 2.8552,
+    "pose_err_pen": 2.8552,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 2.2384,
+    "lse_d": 9.4325,
+    "offset_frames": 0,
+    "lse_d_at0": 9.4325,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.0,
+   "realism": {
+    "realism": 2.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like a genuine camera clip with natural skin, hair and expressions. B has a warped, blurry, smeared face with mismatched features, a dotted texture on the forehead and a glitchy neck outline, so it is clearly synthetic.",
+      "reason_choice": "Strip A shows sharp, natural skin, hair and a consistent shirt. Strip B has warped, blurry facial features, a glitchy neck outline and mosaic-like artifacts."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has smeared, warped facial features, blurry artifacts and a distorted neck/chin, which look clearly synthetic. B is a sharp, natural video of a person with consistent detail.",
+      "reason_choice": "Strip B shows natural, sharp, consistent skin, hair and clothing detail. Strip A has warped, smeared facial features, unstable geometry and a blurry, artifact-ridden face."
+     }
+    ]
+   }
+  },
+  "M103_P1174": {
+   "clip": "M103_P1174",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 4.4486,
+    "face_nme_pen": 4.4486,
+    "mouth_nme": 3.5274,
+    "mouth_nme_pen": 3.5274,
+    "mouth_open_corr": 0.7866,
+    "shoulder_width_px": 355.98,
+    "pose_points_mean": 12.6,
+    "pose_err": 2.8883,
+    "pose_err_pen": 2.8883,
+    "pose_det_rate": 1.0
+   },
+   "lmk_cached": true,
+   "syncnet": {
+    "lse_c": 3.9595,
+    "lse_d": 9.3244,
+    "offset_frames": 0,
+    "lse_d_at0": 9.3244,
+    "n_windows": 195,
+    "box": "mp"
+   },
+   "sync_cached": true,
+   "secs": 0.0,
+   "realism": {
+    "realism": 2.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.0,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A looks like real camera footage with natural skin, expressions and a sharp image; B has a smeared, warped face, melting features, a white artifact at the neck and heavy blur, which looks synthetic.",
+      "reason_choice": "Strip A shows natural skin detail, consistent features and plausible expressions. Strip B has a smeared, warped face, distorted eyes and mouth, and artifacts around the neck, which are typical of synthesis."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 2,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 5,
+      "reason_realism": "A has a warped, smeared, blurry face with melting features and inconsistent geometry. B has natural skin texture, consistent lighting and believable expressions, like real camera footage.",
+      "reason_choice": "Strip B has natural sharp detail, consistent anatomy and motion; strip A has warped, blurry, melted facial features and distorted jaw/neck artifacts typical of synthesis."
+     }
+    ]
+   }
+  }
+ }
+}

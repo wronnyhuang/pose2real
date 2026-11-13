@@ -1,0 +1,11 @@
+- **Lip sync is the open problem.** With true landmarks the model scores 3.4–3.5 on SyncNet; real video scores 6.2. More training improved landmark error but not SyncNet. SyncNet reads teeth, tongue and fast lip closures that 478 points do not pin down.
+- **Training against SyncNet directly raised the score but cheated.** 45 minutes with a SyncNet loss took confidence from 3.47 to 4.25. The frames show a bright pink sparkle on one eye and softer faces, and realism fell from 5.2 to 3.1. It learned to fool the scorer. It is listed in the table but is not the best model.
+- **Limiting that loss to the mouth box was worse still:** lip sync 2.83, mouth error 3.3%. One 5-frame window per step is too little signal.
+- **Realism is 5.2–5.8, real video 8.1.** The judge never mistook a generated strip for the real one (1 of 24 trials at best). It names smooth skin and soft detail. This is on par with the render→photoreal fast model judged the same way (5.4).
+- **Unseen people do not get the reference person's face.** With 33 training identities the model draws a plausible person with roughly the right hair and clothes, not the person in the reference photo. The seen-identity run fixes the look.
+- **Look-ahead did not buy lip sync.** At the landmark level 67–167 ms helps a little over zero (0.66–0.71 vs 0.62 correlation) and 333 ms is no better. On SyncNet the zero-look-ahead setting scored highest (2.64 vs 1.75–2.53). Differences are within noise for 12 clips.
+- **Cross-attention-only injection failed** (face error 8%, no usable sync): without a spatial map the model cannot place the face. **Early-layer injection** produced double images (realism 1.7).
+- **ControlNet-style injection** matched noise injection on sync (2.97) and skeleton (2.1%) but was worse on face error (2.8%) and slower (90 ms).
+- **Other backbones lost.** SD 1.5 one-step: similar sync, worse face error (2.9%), realism 3.2. Tiny-SD: lip sync 1.0, face error 5.1%.
+- **Encoder depth 2 and 12 both scored below depth 6**, and both runs looked worse to the judge (2.3 and 2.9). One run each, so treat depth as unresolved.
+- **Not attempted:** Wan VACE and an AnimateDiff-style temporal module. Each needs its own multi-hour training and the budget went to the loop above.

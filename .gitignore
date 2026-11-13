@@ -1,0 +1,42 @@
+# weights / checkpoints
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+*.task
+*.model
+# media and datasets
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.wav
+*.m4a
+*.mp3
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.npz
+*.npy
+data/pairs/*/*.mp4
+data/clips/
+frames/
+runs/
+models/
+venv/
+env/
+__pycache__/
+# secrets / logs
+.env
+*.key
+*.pem
+id_*
+*.log
+known_hosts
+spend*.json
+pod_state*.json
+state_*.json
+artifacts/

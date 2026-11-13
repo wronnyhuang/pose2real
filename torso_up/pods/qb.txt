@@ -1,0 +1,4 @@
+t_base 45 --bs 4 --ckpt
+t_hands_none 45 --bs 4 --ckpt --hands none
+t_inj_controlnet 45 --bs 4 --ckpt --inj controlnet
+t_enc_raster 45 --bs 4 --ckpt --enc raster

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>pose2real: landmarks + skeleton + audio to talking video</title>
+<style>
+:root{--bg:#0d1117;--panel:#161b22;--line:#30363d;--fg:#f5f7fa;--mut:#a9b4c2;--blue:#6cb6ff;--orange:#ffb454;--bestbg:#12304f}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;overflow-x:hidden}
+main{max-width:960px;margin:0 auto;padding:14px 12px 60px}
+h1{font-size:1.55rem;line-height:1.25;margin:.4em 0 .3em}
+h2{font-size:1.25rem;margin:1.8em 0 .5em;border-bottom:2px solid var(--line);padding-bottom:.25em}
+h3,h4,h5{margin:1em 0 .3em}h3{font-size:1.05rem}
+a{color:var(--blue)}code{background:#222a35;padding:1px 5px;border-radius:4px;overflow-wrap:anywhere}
+.mut{color:var(--mut)}.small{font-size:.85rem}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:10px 0}
+.card p{margin:.5em 0}.card ul,.card ol{padding-left:1.2em;margin:.5em 0}
+.sum{border-left:4px solid var(--orange)}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:8px;margin:8px 0}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:right;vertical-align:top;white-space:nowrap}
+thead th{background:#212936;position:sticky;top:0}
+th[scope=row],td.first,th.first{text-align:left;white-space:normal;min-width:9em}
+table.hl th[scope=row]{min-width:7em;font-size:.85rem;font-weight:500}table.hl td{text-align:center}table.hl thead th{text-align:center;white-space:normal;min-width:5em}
+table.abl td.first,table.abl th.first{position:sticky;left:0;background:var(--panel);z-index:1;border-right:1px solid var(--line)}
+table.abl thead th.first{background:#212936;z-index:2}
+tr.grp td{background:#1d2530;color:var(--orange);font-weight:700;text-align:left;text-transform:uppercase;font-size:.8rem;letter-spacing:.04em}
+tr.ref td{background:#1a2028}tr.ref td.first{background:#1a2028}
+.best{color:var(--blue);font-weight:800}td.bestc{background:var(--bestbg);box-shadow:inset 0 0 0 1px var(--blue)}
+.clip{margin:16px 0 6px;font-weight:700;color:var(--orange)}
+.vid{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px;margin:8px 0}
+.vid .cap{font-size:.9rem;margin:0 0 6px}.vid .cap b{color:var(--blue)}
+video{width:100%;height:auto;aspect-ratio:3/1;background:#000;border-radius:6px;display:block}
+.big{font-size:1.6rem;font-weight:700;margin:.2em 0}
+.bar{height:10px;background:#222a35;border-radius:5px;overflow:hidden}.bar i{display:block;height:100%;background:var(--blue)}
+.legend span{display:inline-block;margin-right:12px}.sw{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-1px;margin-right:4px}
+</style></head><body><main>
+<h1>pose2real: landmarks, skeleton and audio to a talking video</h1>
+<p class="mut small">Held-out Seamless clips, 8 s, 384&times;384, 30 fps. 4 runs scored. Built 2026-11-12 23:57.</p>
+<div class="card sum"><p>DUMMY DATA. Pipeline test only.</p>
+<p>The best fake run is <strong>WavLM encoder</strong>. Lip sync gets close to real.</p>
+<ul>
+<li>Fake bullet one</li>
+<li>Fake bullet <strong>two</strong></li>
+</ul></div>
+<section id="headline"><h2>Headline</h2><div class="tw"><table class="hl"><thead><tr><th>Metric</th><th>Best run<br><small>WavLM encoder</small></th><th>Real video<br><small>ceiling</small></th><th>Render → photoreal<br><small>fast model</small></th></tr></thead><tbody><tr><th scope="row">Lip-sync confidence, SyncNet LSE-C (higher is better)</th><td><b class="best">7.00</b></td><td>8.40</td><td>5.50</td></tr><tr><th scope="row">Lip-sync distance, SyncNet LSE-D (lower is better)</th><td><b class="best">7.70</b></td><td>6.90</td><td>8.70</td></tr><tr><th scope="row">Face landmark error % (lower is better)</th><td><b class="best">2.40</b></td><td>0.00</td><td>3.00</td></tr><tr><th scope="row">Mouth landmark error % (lower is better)</th><td><b class="best">3.90</b></td><td>0.00</td><td>5.00</td></tr><tr><th scope="row">Skeleton error % (lower is better)</th><td><b class="best">4.00</b></td><td>0.00</td><td>4.50</td></tr><tr><th scope="row">Realism, judge score 1-10 (higher is better)</th><td><b class="best">7.3</b></td><td>9.1</td><td>6.5</td></tr><tr><th scope="row">Speed, ms per frame (lower is better)</th><td><b class="best">62</b></td><td><span class="mut">—</span></td><td>150</td></tr></tbody></table></div><p class="mut small">Bold = better of the two models. Real video is the ceiling, shown for scale.</p></section>
+<section id="clips"><h2>Side by side, with sound</h2><p class="mut small">Left to right: the skeleton and face landmarks fed to the model, what the model made, the real recording. Tap play (sound on). For detail, go full screen and rotate the phone.</p><p class="legend small"><span><i class="sw" style="background:#5ae6ff"></i>face contour</span><span><i class="sw" style="background:#ffe63c"></i>lips</span><span><i class="sw" style="background:#ff8c00"></i>body skeleton</span></p><div class="clip">M000_P0115</div><div class="vid"><p class="cap"><b>WavLM encoder</b> <span class="mut">best sync</span></p><video controls preload="none" playsinline poster="videos/enc_wavlm__M000_P0115.jpg"><source src="videos/enc_wavlm__M000_P0115.mp4" type="video/mp4"></video></div><div class="vid"><p class="cap"><b>Cross-attention</b></p><video controls preload="none" playsinline poster="videos/inj_cross__M000_P0115.jpg"><source src="videos/inj_cross__M000_P0115.mp4" type="video/mp4"></video></div><div class="vid"><p class="cap"><b>No look-ahead</b> <span class="mut">worst</span></p><video controls preload="none" playsinline poster="videos/look_0__M000_P0115.jpg"><source src="videos/look_0__M000_P0115.mp4" type="video/mp4"></video></div><div class="clip">M009_P0217</div><div class="vid"><p class="cap"><b>WavLM encoder</b> <span class="mut">best sync</span></p><video controls preload="none" playsinline poster="videos/enc_wavlm__M009_P0217.jpg"><source src="videos/enc_wavlm__M009_P0217.mp4" type="video/mp4"></video></div><div class="vid"><p class="cap"><b>Cross-attention</b></p><video controls preload="none" playsinline poster="videos/inj_cross__M009_P0217.jpg"><source src="videos/inj_cross__M009_P0217.mp4" type="video/mp4"></video></div><div class="vid"><p class="cap"><b>No look-ahead</b> <span class="mut">worst</span></p><video controls preload="none" playsinline poster="videos/look_0__M009_P0217.jpg"><source src="videos/look_0__M009_P0217.mp4" type="video/mp4"></video></div><div class="clip">M023_P0370</div><div class="vid"><p class="cap"><b>WavLM encoder</b> <span class="mut">best sync</span></p><video controls preload="none" playsinline poster="videos/enc_wavlm__M023_P0370.jpg"><source src="videos/enc_wavlm__M023_P0370.mp4" type="video/mp4"></video></div><div class="vid"><p class="cap"><b>Cross-attention</b></p><video controls preload="none" playsinline poster="videos/inj_cross__M023_P0370.jpg"><source src="videos/inj_cross__M023_P0370.mp4" type="video/mp4"></video></div><div class="vid"><p class="cap"><b>No look-ahead</b> <span class="mut">worst</span></p><video controls preload="none" playsinline poster="videos/look_0__M023_P0370.jpg"><source src="videos/look_0__M023_P0370.mp4" type="video/mp4"></video></div></section>
+<section id="ablation"><h2>All runs</h2><div class="tw wide"><table class="abl"><thead><tr><th class="first">Run</th><th>Backbone</th><th>Injection</th><th>Encoder</th><th>Audio look-ahead</th><th>Landmark look-ahead</th><th>Train min</th><th>Steps</th><th>LSE-C ↑</th><th>LSE-D ↓</th><th>Sync offset (fr)</th><th>Face err % ↓</th><th>Mouth err % ↓</th><th>Skeleton err % ↓</th><th>Mouth-open corr ↑</th><th>Face found ↑</th><th>Realism /10 ↑</th><th>Fooled ↑</th><th>ms/frame ↓</th></tr></thead><tbody><tr class="grp"><td colspan="19">reference rows</td></tr><tr class="ref"><td class="first">Real video (ceiling)<br><small class="mut">real</small></td><td><span class=mut>—</span></td><td><span class=mut>—</span></td><td><span class=mut>—</span></td><td><span class=mut>—</span></td><td><span class=mut>—</span></td><td><span class=mut>—</span></td><td><span class=mut>—</span></td><td class="">8.40</td><td class="">6.90</td><td class="">0.0</td><td class="">0.00</td><td class="">0.00</td><td class="">0.00</td><td class=""><span class="mut">—</span></td><td class="">1.00</td><td class="">9.1</td><td class="">0.50</td><td class=""><span class="mut">—</span></td></tr><tr class="grp"><td colspan="19">reference rows</td></tr><tr class="ref"><td class="first">Render → photoreal, fast model<br><small class="mut">render2real_fast</small></td><td><span class=mut>—</span></td><td><span class=mut>—</span></td><td><span class=mut>—</span></td><td><span class=mut>—</span></td><td><span class=mut>—</span></td><td><span class=mut>—</span></td><td><span class=mut>—</span></td><td class="">5.50</td><td class="">8.70</td><td class=""><span class="mut">—</span></td><td class="">3.00</td><td class="">5.00</td><td class="">4.50</td><td class=""><span class="mut">—</span></td><td class="">0.99</td><td class="">6.5</td><td class="">0.10</td><td class="">150</td></tr><tr class="grp"><td colspan="19">injection</td></tr><tr class=""><td class="first">Concat injection<br><small class="mut">inj_concat</small></td><td>SD-Turbo</td><td>concat</td><td>mel</td><td>4</td><td>2</td><td>95</td><td>12000</td><td class="">5.10</td><td class="">8.90</td><td class="bestc"><b class="best">0.5</b></td><td class="">3.10</td><td class="">5.20</td><td class="">4.70</td><td class="bestc"><b class="best">0.80</b></td><td class="bestc"><b class="best">0.98</b></td><td class="">6.2</td><td class="bestc"><b class="best">0.05</b></td><td class="bestc"><b class="best">41</b></td></tr><tr class=""><td class="first">Cross-attention injection<br><small class="mut">inj_cross</small></td><td>SD-Turbo</td><td>cross</td><td>mel</td><td>4</td><td>2</td><td>95</td><td>12000</td><td class="">6.40</td><td class="">8.10</td><td class="bestc"><b class="best">0.5</b></td><td class="">2.70</td><td class="">4.40</td><td class="">4.10</td><td class="bestc"><b class="best">0.80</b></td><td class="bestc"><b class="best">0.98</b></td><td class="">6.9</td><td class="bestc"><b class="best">0.05</b></td><td class="">55</td></tr><tr class="grp"><td colspan="19">lookahead</td></tr><tr class=""><td class="first">Look-ahead 0 frames<br><small class="mut">look_0</small></td><td>SD-Turbo</td><td>cross</td><td>mel</td><td>0</td><td>2</td><td>95</td><td>12000</td><td class="">4.20</td><td class="">9.60</td><td class="bestc"><b class="best">0.5</b></td><td class="">3.50</td><td class="">6.10</td><td class="">5.00</td><td class="bestc"><b class="best">0.80</b></td><td class="bestc"><b class="best">0.98</b></td><td class="">5.8</td><td class="bestc"><b class="best">0.05</b></td><td class="bestc"><b class="best">41</b></td></tr><tr class="grp"><td colspan="19">encoder</td></tr><tr class=""><td class="first">WavLM encoder<br><small class="mut">enc_wavlm</small></td><td>SD-Turbo</td><td>cross</td><td>wavlm</td><td>4</td><td>2</td><td>95</td><td>12000</td><td class="bestc"><b class="best">7.00</b></td><td class="bestc"><b class="best">7.70</b></td><td class="bestc"><b class="best">0.5</b></td><td class="bestc"><b class="best">2.40</b></td><td class="bestc"><b class="best">3.90</b></td><td class="bestc"><b class="best">4.00</b></td><td class="bestc"><b class="best">0.80</b></td><td class="bestc"><b class="best">0.98</b></td><td class="bestc"><b class="best">7.3</b></td><td class="bestc"><b class="best">0.05</b></td><td class="">62</td></tr></tbody></table></div><p class="mut small">Swipe sideways for more columns. Bold on blue = best run in that column (reference rows excluded). Offset: closest to 0 is best.</p></section>
+<section id="worked"><h2>What worked</h2><div class="card"><ul>
+<li>Cross-attention beat concat.</li>
+<li><strong>WavLM</strong> audio features.</li>
+</ul></div></section>
+<section id="didnt"><h2>What did not</h2><div class="card"><ul>
+<li>Zero look-ahead hurt sync.</li>
+</ul></div></section>
+<section id="next"><h2>Next</h2><div class="card"><ul>
+<li>Train longer.</li>
+</ul></div></section>
+<section id="spend"><h2>Spend</h2><div class="card"><p class="big">$7.80 <span class="mut">of $30 cap</span></p>
+<div class="bar"><i style="width:26%"></i></div>
+<div class="tw"><table><thead><tr><th>Pod</th><th>GPU</th><th>Rate</th><th>Hours</th><th>Cost</th></tr></thead><tbody><tr><td>train-a</td><td>A100 80GB</td><td>$1.19/h</td><td>6.5</td><td>$7.74</td></tr></tbody></table></div>
+<p>Judge and all LLM calls: Claude subscription, $0 API.</p></div></section>
+</main></body></html>

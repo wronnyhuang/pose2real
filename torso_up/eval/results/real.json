@@ -1,0 +1,2196 @@
+{
+ "run": "real",
+ "dir": "$WORK/eval/ref/real",
+ "made": "2026-11-13 10:39:31",
+ "sync_box": "mp",
+ "sync_interp": "linear",
+ "lmk": "$WORK/common/lmk.py",
+ "inputs": "ROOT/data/clips",
+ "secs_metrics": 55.4,
+ "secs_total": 55.6,
+ "failed": {},
+ "mean": {
+  "n_clips": 20,
+  "n_failed": 0,
+  "syncnet": {
+   "lse_c": 6.0118,
+   "lse_d": 7.8298,
+   "offset_frames": -0.55,
+   "abs_offset_frames": 0.55,
+   "lse_d_at0": 8.9372,
+   "n": 20
+  },
+  "landmarks": {
+   "face_nme": 0.0,
+   "mouth_nme": 0.0,
+   "mouth_open_corr": 1.0,
+   "det_rate": 1.0,
+   "face_nme_pen": 0.0,
+   "mouth_nme_pen": 0.0,
+   "pose_err": 0.0,
+   "pose_err_pen": 0.0,
+   "pose_det_rate": 1.0,
+   "shoulder_err": 0.0,
+   "elbow_err": 0.0,
+   "wrist_err": 0.0,
+   "arm_err": 0.0
+  },
+  "hands": {
+   "hand_det_rate": 1.0,
+   "hand_err_pen": 0.0,
+   "hand_err_hs_pen": 0.0,
+   "hand_extra_rate": 0.0,
+   "hand_err": 0.0,
+   "hand_err_hs": 0.0,
+   "finger_pose_err": 0.0,
+   "finger_angle_err_deg": 0.0,
+   "n_hand_frames": 7996,
+   "n_hand_both": 7996,
+   "n_hand_clips": 20
+  },
+  "realism": {
+   "clips": 20,
+   "trials": 40,
+   "score_1_10": 8.85,
+   "score_real_1_10": 8.85,
+   "fooled_rate": 0.5,
+   "order_consistency": 0.0,
+   "errors": 0,
+   "hands_clips": 20,
+   "hands_score_1_10": 8.25,
+   "hands_score_real_1_10": 8.25,
+   "hands_errors": 0,
+   "model": "sonnet"
+  }
+ },
+ "mean_same12": {
+  "n_clips": 12,
+  "n_failed": 0,
+  "syncnet": {
+   "lse_c": 6.0905,
+   "lse_d": 7.7871,
+   "offset_frames": -0.5,
+   "abs_offset_frames": 0.5,
+   "lse_d_at0": 8.823,
+   "n": 12
+  },
+  "landmarks": {
+   "face_nme": 0.0,
+   "mouth_nme": 0.0,
+   "mouth_open_corr": 1.0,
+   "det_rate": 1.0,
+   "face_nme_pen": 0.0,
+   "mouth_nme_pen": 0.0,
+   "pose_err": 0.0,
+   "pose_err_pen": 0.0,
+   "pose_det_rate": 1.0,
+   "shoulder_err": 0.0,
+   "elbow_err": 0.0,
+   "wrist_err": 0.0,
+   "arm_err": 0.0
+  },
+  "hands": {
+   "hand_det_rate": 1.0,
+   "hand_err_pen": 0.0,
+   "hand_err_hs_pen": 0.0,
+   "hand_extra_rate": 0.0,
+   "hand_err": 0.0,
+   "hand_err_hs": 0.0,
+   "finger_pose_err": 0.0,
+   "finger_angle_err_deg": 0.0,
+   "n_hand_frames": 4612,
+   "n_hand_both": 4612,
+   "n_hand_clips": 12
+  },
+  "realism": {
+   "clips": 12,
+   "trials": 24,
+   "score_1_10": 8.875,
+   "score_real_1_10": 8.875,
+   "fooled_rate": 0.5,
+   "order_consistency": 0.0,
+   "errors": 0,
+   "hands_clips": 12,
+   "hands_score_1_10": 8.25,
+   "hands_score_real_1_10": 8.25,
+   "hands_errors": 0,
+   "model": "sonnet"
+  }
+ },
+ "mean_gesture8": {
+  "n_clips": 8,
+  "n_failed": 0,
+  "syncnet": {
+   "lse_c": 5.8938,
+   "lse_d": 7.8937,
+   "offset_frames": -0.625,
+   "abs_offset_frames": 0.625,
+   "lse_d_at0": 9.1083,
+   "n": 8
+  },
+  "landmarks": {
+   "face_nme": 0.0,
+   "mouth_nme": 0.0,
+   "mouth_open_corr": 1.0,
+   "det_rate": 1.0,
+   "face_nme_pen": 0.0,
+   "mouth_nme_pen": 0.0,
+   "pose_err": 0.0,
+   "pose_err_pen": 0.0,
+   "pose_det_rate": 1.0,
+   "shoulder_err": 0.0,
+   "elbow_err": 0.0,
+   "wrist_err": 0.0,
+   "arm_err": 0.0
+  },
+  "hands": {
+   "hand_det_rate": 1.0,
+   "hand_err_pen": 0.0,
+   "hand_err_hs_pen": 0.0,
+   "hand_extra_rate": 0.0,
+   "hand_err": 0.0,
+   "hand_err_hs": 0.0,
+   "finger_pose_err": 0.0,
+   "finger_angle_err_deg": 0.0,
+   "n_hand_frames": 3384,
+   "n_hand_both": 3384,
+   "n_hand_clips": 8
+  },
+  "realism": {
+   "clips": 8,
+   "trials": 16,
+   "score_1_10": 8.812,
+   "score_real_1_10": 8.812,
+   "fooled_rate": 0.5,
+   "order_consistency": 0.0,
+   "errors": 0,
+   "hands_clips": 8,
+   "hands_score_1_10": 8.25,
+   "hands_score_real_1_10": 8.25,
+   "hands_errors": 0,
+   "model": "sonnet"
+  }
+ },
+ "clips": {
+  "M000_P0115": {
+   "clip": "M000_P0115",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "iod_px": 55.47,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 195.6,
+    "pose_err": 0.0,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 0.0,
+    "shoulder_err_frames": 240,
+    "elbow_err": 0.0,
+    "elbow_err_frames": 240,
+    "wrist_err": 0.0,
+    "wrist_err_frames": 240,
+    "arm_err": 0.0,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 240,
+    "n_nohand_frames": 240,
+    "n_hand_both": 240,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     0,
+     240
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": 0.0,
+    "hand_err": 0.0,
+    "hand_err_pen": 0.0,
+    "hand_err_hs": 0.0,
+    "hand_err_hs_pen": 0.0,
+    "finger_pose_err": 0.0,
+    "finger_angle_err_deg": 0.0,
+    "hand_size_px": 35.73
+   },
+   "lmk_cached": true,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 8.4409,
+    "lse_d": 6.6725,
+    "offset_frames": 0,
+    "lse_d_at0": 6.6725,
+    "n_windows": 195,
+    "crop_px": 174.12358088874817,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 29.2,
+   "set": "same12",
+   "realism": {
+    "realism": 8.5,
+    "realism_real": 8.5,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show natural skin texture, fabric folds, lighting and hand gestures that read as a real camera recording, with no visible artifacts.",
+      "reason_choice": "The two grids look identical, and I could not find any visible difference, so this is a guess."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two images look identical. Both show a natural studio shot with realistic skin texture, fabric and hand gestures, and no visible artifacts.",
+      "reason_choice": "The two grids look identical. I found no visible difference, so this is a guess."
+     }
+    ],
+    "hands": {
+     "hands_score": 6.0,
+     "hands_score_real": 6.0,
+     "trials": [
+      {
+       "order": "real/gen",
+       "hands_gen": 6,
+       "hands_real": 6,
+       "reason": "The two strips look identical. The right hand has plausible fingers and a plausible thumb, but it is soft and blurry, with some smeared finger edges in the first two frames."
+      }
+     ]
+    }
+   }
+  },
+  "M001_P0115": {
+   "clip": "M001_P0115",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "iod_px": 52.83,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 173.68,
+    "pose_err": 0.0,
+    "pose_points_mean": 16.9,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 0.0,
+    "shoulder_err_frames": 240,
+    "elbow_err": 0.0,
+    "elbow_err_frames": 240,
+    "wrist_err": 0.0,
+    "wrist_err_frames": 240,
+    "arm_err": 0.0,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 438,
+    "n_nohand_frames": 42,
+    "n_hand_both": 438,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     229,
+     209
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": 0.0,
+    "hand_err": 0.0,
+    "hand_err_pen": 0.0,
+    "hand_err_hs": 0.0,
+    "hand_err_hs_pen": 0.0,
+    "finger_pose_err": 0.0,
+    "finger_angle_err_deg": 0.0,
+    "hand_size_px": 33.65
+   },
+   "lmk_cached": true,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 7.4665,
+    "lse_d": 7.2491,
+    "offset_frames": -1,
+    "lse_d_at0": 10.6136,
+    "n_windows": 195,
+    "crop_px": 155.1602784986496,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 31.4,
+   "set": "same12",
+   "realism": {
+    "realism": 9.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show natural skin texture, fabric detail, plausible hand motion blur and consistent studio lighting, so I can't tell either from real camera footage.",
+      "reason_choice": "The two grids look virtually identical, so this is a guess with no visible basis."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show natural skin texture, fabric detail, motion blur on the hands and consistent lighting, like real camera footage.",
+      "reason_choice": "The two grids look nearly identical, and I couldn't find a visible difference that separates real from synthesized, so this is a guess."
+     }
+    ],
+    "hands": {
+     "hands_score": 9.0,
+     "hands_score_real": 9.0,
+     "trials": [
+      {
+       "order": "gen/real",
+       "hands_gen": 9,
+       "hands_real": 9,
+       "reason": "The two images look identical. The hands have natural anatomy, with realistic skin, veins and motion blur, and look like real footage."
+      }
+     ]
+    }
+   }
+  },
+  "M009_P0217": {
+   "clip": "M009_P0217",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "iod_px": 52.2,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 193.43,
+    "pose_err": 0.0,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 0.0,
+    "shoulder_err_frames": 240,
+    "elbow_err": 0.0,
+    "elbow_err_frames": 240,
+    "wrist_err": 0.0,
+    "wrist_err_frames": 240,
+    "arm_err": 0.0,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 49,
+    "n_nohand_frames": 431,
+    "n_hand_both": 49,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     23,
+     26
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": 0.0,
+    "hand_err": 0.0,
+    "hand_err_pen": 0.0,
+    "hand_err_hs": 0.0,
+    "hand_err_hs_pen": 0.0,
+    "finger_pose_err": 0.0,
+    "finger_angle_err_deg": 0.0,
+    "hand_size_px": 22.37
+   },
+   "lmk_cached": true,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 4.7714,
+    "lse_d": 6.5044,
+    "offset_frames": 0,
+    "lse_d_at0": 6.5044,
+    "n_windows": 195,
+    "crop_px": 160.43075123023988,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 27.8,
+   "set": "same12",
+   "realism": {
+    "realism": 9.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show a real-looking person with natural curly hair, fabric texture, lighting and subtle movement, and I can't see any artifacts that separate them.",
+      "reason_choice": "The two grids look identical to me, so I couldn't find any visible difference and this is a guess."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show natural skin, hair, fabric and lighting, with subtle, plausible head and expression changes and no visible artifacts.",
+      "reason_choice": "The two grids look identical to me, so I couldn't find any visible difference and this is a guess."
+     }
+    ],
+    "hands": {
+     "hands_score": 8.0,
+     "hands_score_real": 8.0,
+     "trials": [
+      {
+       "order": "gen/real",
+       "hands_gen": 8,
+       "hands_real": 8,
+       "reason": "Both images look identical: natural clasped hands with plausible fingers, skin tone and shading, and stable across frames, with only slight softness."
+      }
+     ]
+    }
+   }
+  },
+  "M023_P0370": {
+   "clip": "M023_P0370",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "iod_px": 56.05,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 190.73,
+    "pose_err": 0.0,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 0.0,
+    "shoulder_err_frames": 240,
+    "elbow_err": 0.0,
+    "elbow_err_frames": 240,
+    "wrist_err": 0.0,
+    "wrist_err_frames": 240,
+    "arm_err": 0.0,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 275,
+    "n_nohand_frames": 205,
+    "n_hand_both": 275,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     240,
+     35
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": 0.0,
+    "hand_err": 0.0,
+    "hand_err_pen": 0.0,
+    "hand_err_hs": 0.0,
+    "hand_err_hs_pen": 0.0,
+    "finger_pose_err": 0.0,
+    "finger_angle_err_deg": 0.0,
+    "hand_size_px": 42.45
+   },
+   "lmk_cached": true,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 4.6595,
+    "lse_d": 8.4014,
+    "offset_frames": -1,
+    "lse_d_at0": 10.9983,
+    "n_windows": 195,
+    "crop_px": 171.80852519226073,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 28.1,
+   "set": "same12",
+   "realism": {
+    "realism": 8.5,
+    "realism_real": 8.5,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show natural camera footage with consistent lighting, fabric texture, hands and a stool. I saw no visible artifacts in either.",
+      "reason_choice": "The two grids look identical to me, so I can't find a real difference and this is a guess."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical: the same natural studio footage, with realistic fabric texture, lighting and hand and head motion. I see no visible difference or artifacts.",
+      "reason_choice": "The two grids look identical, so I couldn't find any visible difference and this is a guess."
+     }
+    ],
+    "hands": {
+     "hands_score": 8.0,
+     "hands_score_real": 8.0,
+     "trials": [
+      {
+       "order": "real/gen",
+       "hands_gen": 8,
+       "hands_real": 8,
+       "reason": "The two images look identical. The hands are natural and stable with plausible fingers, and only slight blur in the last frames."
+      }
+     ]
+    }
+   }
+  },
+  "M037_P0485": {
+   "clip": "M037_P0485",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "iod_px": 57.15,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 213.97,
+    "pose_err": 0.0,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 0.0,
+    "shoulder_err_frames": 240,
+    "elbow_err": 0.0,
+    "elbow_err_frames": 240,
+    "wrist_err": 0.0,
+    "wrist_err_frames": 240,
+    "arm_err": 0.0,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 480,
+    "n_nohand_frames": 0,
+    "n_hand_both": 480,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     240,
+     240
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": null,
+    "hand_err": 0.0,
+    "hand_err_pen": 0.0,
+    "hand_err_hs": 0.0,
+    "hand_err_hs_pen": 0.0,
+    "finger_pose_err": 0.0,
+    "finger_angle_err_deg": 0.0,
+    "hand_size_px": 48.1
+   },
+   "lmk_cached": true,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 4.4948,
+    "lse_d": 8.7714,
+    "offset_frames": 0,
+    "lse_d_at0": 8.7714,
+    "n_windows": 195,
+    "crop_px": 181.31820910835268,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 27.3,
+   "set": "same12",
+   "realism": {
+    "realism": 9.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show natural camera footage: realistic skin, hair, fabric and hands, with consistent lighting and natural speaking expressions. I saw no visible difference between them.",
+      "reason_choice": "The two grids look nearly identical, and I found no visible artifact that separates them, so this is a guess."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical to me. Both show natural skin texture, consistent lighting, believable hand and clothing detail, and natural mouth movement, so they look like real camera footage. I can't tell them apart.",
+      "reason_choice": "The two grids look identical to me, so I can't see a real difference and this is a guess."
+     }
+    ],
+    "hands": {
+     "hands_score": 9.0,
+     "hands_score_real": 9.0,
+     "trials": [
+      {
+       "order": "real/gen",
+       "hands_gen": 9,
+       "hands_real": 9,
+       "reason": "The two strips look identical. Both show natural hands with correct finger counts, believable veins, skin texture, nails and a ring, and consistent motion across frames."
+      }
+     ]
+    }
+   }
+  },
+  "M038_P0485": {
+   "clip": "M038_P0485",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "iod_px": 58.65,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 223.04,
+    "pose_err": 0.0,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 0.0,
+    "shoulder_err_frames": 240,
+    "elbow_err": 0.0,
+    "elbow_err_frames": 240,
+    "wrist_err": 0.0,
+    "wrist_err_frames": 240,
+    "arm_err": 0.0,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 480,
+    "n_nohand_frames": 0,
+    "n_hand_both": 480,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     240,
+     240
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": null,
+    "hand_err": 0.0,
+    "hand_err_pen": 0.0,
+    "hand_err_hs": 0.0,
+    "hand_err_hs_pen": 0.0,
+    "finger_pose_err": 0.0,
+    "finger_angle_err_deg": 0.0,
+    "hand_size_px": 46.79
+   },
+   "lmk_cached": true,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 4.4199,
+    "lse_d": 9.5702,
+    "offset_frames": 0,
+    "lse_d_at0": 9.5702,
+    "n_windows": 195,
+    "crop_px": 189.45894673919682,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 31.7,
+   "set": "same12",
+   "realism": {
+    "realism": 8.5,
+    "realism_real": 8.5,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show a real-looking camera shot with natural skin, hair and fabric texture, and consistent lighting and hands across frames, so I can't tell them apart.",
+      "reason_choice": "The two grids look practically identical, and I couldn't find a visible difference that separates real from synthetic, so this is a guess."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show natural skin, hair, fabric and hand detail, with consistent lighting and camera-like softness, so I see nothing to separate them.",
+      "reason_choice": "The two grids look practically identical, so I couldn't find a visible difference and this is a guess."
+     }
+    ],
+    "hands": {
+     "hands_score": 9.0,
+     "hands_score_real": 9.0,
+     "trials": [
+      {
+       "order": "real/gen",
+       "hands_gen": 9,
+       "hands_real": 9,
+       "reason": "The two strips look identical. The hands have natural anatomy, skin texture, veins, ring and nails, and they stay consistent across all six frames."
+      }
+     ]
+    }
+   }
+  },
+  "M075_P0845": {
+   "clip": "M075_P0845",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "iod_px": 56.76,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 189.62,
+    "pose_err": 0.0,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 0.0,
+    "shoulder_err_frames": 240,
+    "elbow_err": 0.0,
+    "elbow_err_frames": 240,
+    "wrist_err": 0.0,
+    "wrist_err_frames": 240,
+    "arm_err": 0.0,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 480,
+    "n_nohand_frames": 0,
+    "n_hand_both": 480,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     240,
+     240
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": null,
+    "hand_err": 0.0,
+    "hand_err_pen": 0.0,
+    "hand_err_hs": 0.0,
+    "hand_err_hs_pen": 0.0,
+    "finger_pose_err": 0.0,
+    "finger_angle_err_deg": 0.0,
+    "hand_size_px": 45.07
+   },
+   "lmk_cached": true,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 5.5764,
+    "lse_d": 8.4348,
+    "offset_frames": -1,
+    "lse_d_at0": 8.4793,
+    "n_windows": 195,
+    "crop_px": 165.0867191028595,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 27.2,
+   "set": "same12",
+   "realism": {
+    "realism": 9.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show a real-looking person with natural skin, hair, fabric and hand motion blur, and I can't see any difference between them.",
+      "reason_choice": "The two grids look nearly identical, and I couldn't find a visible difference that would separate real from synthetic, so this is a guess."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show natural skin, hair, fabric and hand motion blur, and I see no visible artifacts, so they get the same score.",
+      "reason_choice": "The two grids look practically identical, so I couldn't find a visible difference and this is a guess."
+     }
+    ],
+    "hands": {
+     "hands_score": 8.0,
+     "hands_score_real": 8.0,
+     "trials": [
+      {
+       "order": "gen/real",
+       "hands_gen": 8,
+       "hands_real": 8,
+       "reason": "The two strips look identical. The hands have natural finger counts, skin texture and motion blur, and they look like real camera footage."
+      }
+     ]
+    }
+   }
+  },
+  "M076_P0845": {
+   "clip": "M076_P0845",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "iod_px": 55.65,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 197.38,
+    "pose_err": 0.0,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 0.0,
+    "shoulder_err_frames": 240,
+    "elbow_err": 0.0,
+    "elbow_err_frames": 240,
+    "wrist_err": 0.0,
+    "wrist_err_frames": 240,
+    "arm_err": 0.0,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 479,
+    "n_nohand_frames": 1,
+    "n_hand_both": 479,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     239,
+     240
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": 0.0,
+    "hand_err": 0.0,
+    "hand_err_pen": 0.0,
+    "hand_err_hs": 0.0,
+    "hand_err_hs_pen": 0.0,
+    "finger_pose_err": 0.0,
+    "finger_angle_err_deg": 0.0,
+    "hand_size_px": 41.36
+   },
+   "lmk_cached": true,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 6.0078,
+    "lse_d": 8.1565,
+    "offset_frames": -3,
+    "lse_d_at0": 14.5814,
+    "n_windows": 195,
+    "crop_px": 160.4990176525116,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 28.4,
+   "set": "same12",
+   "realism": {
+    "realism": 9.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show natural skin, hair, fabric and hand motion like real camera footage, and I can't see any difference between them.",
+      "reason_choice": "The two grids look identical, with no visible difference in artifacts or motion, so this is a pure guess."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show natural skin, fabric, hair and hand poses, with no visible artifacts, so they look like real camera footage.",
+      "reason_choice": "The two grids look virtually identical, and I found no visible artifact that separates them, so this is a guess."
+     }
+    ],
+    "hands": {
+     "hands_score": 8.0,
+     "hands_score_real": 8.0,
+     "trials": [
+      {
+       "order": "real/gen",
+       "hands_gen": 8,
+       "hands_real": 8,
+       "reason": "The two strips look identical. The hands have natural proportions, nails and skin texture, with realistic motion blur in the left hand. The only oddity is a slightly blobby fist in the last top crop."
+      }
+     ]
+    }
+   }
+  },
+  "M092_P0989": {
+   "clip": "M092_P0989",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "iod_px": 52.14,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 180.41,
+    "pose_err": 0.0,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 0.0,
+    "shoulder_err_frames": 240,
+    "elbow_err": 0.0,
+    "elbow_err_frames": 240,
+    "wrist_err": 0.0,
+    "wrist_err_frames": 240,
+    "arm_err": 0.0,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 357,
+    "n_nohand_frames": 123,
+    "n_hand_both": 357,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     117,
+     240
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": 0.0,
+    "hand_err": 0.0,
+    "hand_err_pen": 0.0,
+    "hand_err_hs": 0.0,
+    "hand_err_hs_pen": 0.0,
+    "finger_pose_err": 0.0,
+    "finger_angle_err_deg": 0.0,
+    "hand_size_px": 38.49
+   },
+   "lmk_cached": true,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 7.5366,
+    "lse_d": 7.5579,
+    "offset_frames": 0,
+    "lse_d_at0": 7.5579,
+    "n_windows": 195,
+    "crop_px": 152.57362270736695,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 28.6,
+   "set": "same12",
+   "realism": {
+    "realism": 9.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show natural skin, fabric, hair and glasses, plausible hand gestures and expressions, and consistent camera-like lighting. I can't see any artifacts that separate them.",
+      "reason_choice": "The two grids look practically identical, and I found no visible artifact that separates them, so this is a guess."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show natural camera footage with consistent lighting, believable hands, clothing and facial expressions, and no visible artifacts.",
+      "reason_choice": "The two grids look identical to me, so I can't find any visible cue and this is a guess."
+     }
+    ],
+    "hands": {
+     "hands_score": 8.0,
+     "hands_score_real": 8.0,
+     "trials": [
+      {
+       "order": "gen/real",
+       "hands_gen": 8,
+       "hands_real": 8,
+       "reason": "The two strips look identical. The hands have natural finger counts, skin texture, motion blur and clasped-hand poses, so they read as real footage."
+      }
+     ]
+    }
+   }
+  },
+  "M099_P1067": {
+   "clip": "M099_P1067",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "iod_px": 67.23,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 227.74,
+    "pose_err": 0.0,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 0.0,
+    "shoulder_err_frames": 240,
+    "elbow_err": 0.0,
+    "elbow_err_frames": 240,
+    "wrist_err": 0.0,
+    "wrist_err_frames": 240,
+    "arm_err": 0.0,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 393,
+    "n_nohand_frames": 87,
+    "n_hand_both": 393,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     162,
+     231
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": 0.0,
+    "hand_err": 0.0,
+    "hand_err_pen": 0.0,
+    "hand_err_hs": 0.0,
+    "hand_err_hs_pen": 0.0,
+    "finger_pose_err": 0.0,
+    "finger_angle_err_deg": 0.0,
+    "hand_size_px": 50.66
+   },
+   "lmk_cached": true,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 7.6202,
+    "lse_d": 7.3417,
+    "offset_frames": 0,
+    "lse_d_at0": 7.3417,
+    "n_windows": 195,
+    "crop_px": 188.42843829345702,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 27.9,
+   "set": "same12",
+   "realism": {
+    "realism": 9.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show natural skin texture, consistent hands and rings, and realistic camera quality, so I found no visible difference.",
+      "reason_choice": "The two grids look identical at this resolution, so I couldn't find a visible difference and this is a guess."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show a natural, real-looking person with consistent skin, hair, hands and clothing, and no visible artifacts.",
+      "reason_choice": "The two grids look identical, so I found no visible difference and this is a guess."
+     }
+    ],
+    "hands": {
+     "hands_score": 9.0,
+     "hands_score_real": 9.0,
+     "trials": [
+      {
+       "order": "real/gen",
+       "hands_gen": 9,
+       "hands_real": 9,
+       "reason": "The two images look identical. The hands have natural veins, rings, nails and motion blur, and the finger counts and shapes are correct, so they look like real footage."
+      }
+     ]
+    }
+   }
+  },
+  "M100_P1067": {
+   "clip": "M100_P1067",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "iod_px": 68.62,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 234.95,
+    "pose_err": 0.0,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 0.0,
+    "shoulder_err_frames": 240,
+    "elbow_err": 0.0,
+    "elbow_err_frames": 240,
+    "wrist_err": 0.0,
+    "wrist_err_frames": 240,
+    "arm_err": 0.0,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 461,
+    "n_nohand_frames": 19,
+    "n_hand_both": 461,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     239,
+     222
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": 0.0,
+    "hand_err": 0.0,
+    "hand_err_pen": 0.0,
+    "hand_err_hs": 0.0,
+    "hand_err_hs_pen": 0.0,
+    "finger_pose_err": 0.0,
+    "finger_angle_err_deg": 0.0,
+    "hand_size_px": 40.39
+   },
+   "lmk_cached": true,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 4.3448,
+    "lse_d": 8.2623,
+    "offset_frames": 0,
+    "lse_d_at0": 8.2623,
+    "n_windows": 195,
+    "crop_px": 192.2311718711853,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 27.5,
+   "set": "same12",
+   "realism": {
+    "realism": 9.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical: natural skin, hair, clothing and hand detail with consistent studio lighting. I can't tell them apart, so both read as real camera footage.",
+      "reason_choice": "The two grids look virtually identical, so I found no visible artifact to separate them and this is a guess."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show a natural-looking woman with real skin texture, consistent lighting and plausible hand and face motion, so I can't tell them apart.",
+      "reason_choice": "The two grids look identical to me, and I found no visible artifact separating them, so this is a guess."
+     }
+    ],
+    "hands": {
+     "hands_score": 8.0,
+     "hands_score_real": 8.0,
+     "trials": [
+      {
+       "order": "gen/real",
+       "hands_gen": 8,
+       "hands_real": 8,
+       "reason": "The two strips look identical. The hands have natural skin texture, rings and nails with correct finger counts, and they stay stable across frames. The only slight oddity is the tangled clasped fingers."
+      }
+     ]
+    }
+   }
+  },
+  "M103_P1174": {
+   "clip": "M103_P1174",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "iod_px": 57.14,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 219.82,
+    "pose_err": 0.0,
+    "pose_points_mean": 16.7,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 0.0,
+    "shoulder_err_frames": 240,
+    "elbow_err": 0.0,
+    "elbow_err_frames": 240,
+    "wrist_err": 0.0,
+    "wrist_err_frames": 240,
+    "arm_err": 0.0,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 480,
+    "n_nohand_frames": 0,
+    "n_hand_both": 480,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     240,
+     240
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": null,
+    "hand_err": 0.0,
+    "hand_err_pen": 0.0,
+    "hand_err_hs": 0.0,
+    "hand_err_hs_pen": 0.0,
+    "finger_pose_err": 0.0,
+    "finger_angle_err_deg": 0.0,
+    "hand_size_px": 38.28
+   },
+   "lmk_cached": true,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 7.7474,
+    "lse_d": 6.5234,
+    "offset_frames": 0,
+    "lse_d_at0": 6.5234,
+    "n_windows": 195,
+    "crop_px": 186.89090805625918,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 27.0,
+   "set": "same12",
+   "realism": {
+    "realism": 9.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show natural skin texture, believable hand motion blur, consistent shirt wrinkles and camera-like lighting, so I can't see any difference between them.",
+      "reason_choice": "The two grids look identical. I could see no visible artifact that separates them, so this is a guess."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two images look identical. Both show a real camera capture with natural skin, hands, fabric and motion blur, and I see no artifacts.",
+      "reason_choice": "The two grids look essentially identical, so I couldn't find a visible difference and this is a guess."
+     }
+    ],
+    "hands": {
+     "hands_score": 9.0,
+     "hands_score_real": 9.0,
+     "trials": [
+      {
+       "order": "real/gen",
+       "hands_gen": 9,
+       "hands_real": 9,
+       "reason": "The two strips look identical. The hands have natural anatomy, skin texture, knuckle creases and a watch, and the motion blur looks like real camera footage."
+      }
+     ]
+    }
+   }
+  },
+  "G00_P0115": {
+   "clip": "G00_P0115",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "iod_px": 53.34,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 172.41,
+    "pose_err": 0.0,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 0.0,
+    "shoulder_err_frames": 240,
+    "elbow_err": 0.0,
+    "elbow_err_frames": 240,
+    "wrist_err": 0.0,
+    "wrist_err_frames": 240,
+    "arm_err": 0.0,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 462,
+    "n_nohand_frames": 18,
+    "n_hand_both": 462,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     223,
+     239
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": 0.0,
+    "hand_err": 0.0,
+    "hand_err_pen": 0.0,
+    "hand_err_hs": 0.0,
+    "hand_err_hs_pen": 0.0,
+    "finger_pose_err": 0.0,
+    "finger_angle_err_deg": 0.0,
+    "hand_size_px": 28.87
+   },
+   "lmk_cached": true,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 7.6774,
+    "lse_d": 7.1474,
+    "offset_frames": -1,
+    "lse_d_at0": 9.4671,
+    "n_windows": 195,
+    "crop_px": 152.97614799499513,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 22.5,
+   "set": "gesture8",
+   "realism": {
+    "realism": 8.5,
+    "realism_real": 8.5,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two images look identical. Both show natural skin texture, fabric wrinkles, motion blur on the hands and consistent lighting, so both read as real camera footage.",
+      "reason_choice": "The two grids look essentially identical, so I couldn't find a visible difference and this is a guess."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show natural skin texture, motion blur on the hands, consistent lighting and plausible gestures, so both read as real camera footage.",
+      "reason_choice": "The two grids look practically identical, so I could not find a visible difference and this is a guess."
+     }
+    ],
+    "hands": {
+     "hands_score": 8.0,
+     "hands_score_real": 8.0,
+     "trials": [
+      {
+       "order": "real/gen",
+       "hands_gen": 8,
+       "hands_real": 8,
+       "reason": "The two strips look identical. The hands have natural motion blur, correct finger counts and plausible skin and sleeves, so they read as real footage."
+      }
+     ]
+    }
+   }
+  },
+  "G01_P0485": {
+   "clip": "G01_P0485",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "iod_px": 59.06,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 215.76,
+    "pose_err": 0.0,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 0.0,
+    "shoulder_err_frames": 240,
+    "elbow_err": 0.0,
+    "elbow_err_frames": 240,
+    "wrist_err": 0.0,
+    "wrist_err_frames": 240,
+    "arm_err": 0.0,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 480,
+    "n_nohand_frames": 0,
+    "n_hand_both": 480,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     240,
+     240
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": null,
+    "hand_err": 0.0,
+    "hand_err_pen": 0.0,
+    "hand_err_hs": 0.0,
+    "hand_err_hs_pen": 0.0,
+    "finger_pose_err": 0.0,
+    "finger_angle_err_deg": 0.0,
+    "hand_size_px": 47.16
+   },
+   "lmk_cached": true,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 3.7739,
+    "lse_d": 8.4761,
+    "offset_frames": 0,
+    "lse_d_at0": 8.4761,
+    "n_windows": 195,
+    "crop_px": 182.36622346878053,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 20.0,
+   "set": "gesture8",
+   "realism": {
+    "realism": 9.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show natural skin texture, hair, fabric print and hands, with consistent lighting and no visible artifacts, so I can't tell either from real footage.",
+      "reason_choice": "The two grids look essentially identical, and I couldn't find a visible artifact that separates them, so this is a guess."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show a real-looking woman with natural skin texture, fabric detail, hands and lighting, and consistent motion across the frames, with no visible CG artifacts.",
+      "reason_choice": "The two grids look virtually identical, so this is essentially a guess."
+     }
+    ],
+    "hands": {
+     "hands_score": 9.0,
+     "hands_score_real": 9.0,
+     "trials": [
+      {
+       "order": "real/gen",
+       "hands_gen": 9,
+       "hands_real": 9,
+       "reason": "The two strips look identical. Both show anatomically correct hands with natural skin texture, veins, a ring and consistent nails across frames, so they look like real footage."
+      }
+     ]
+    }
+   }
+  },
+  "G02_P0845": {
+   "clip": "G02_P0845",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "iod_px": 46.74,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 157.29,
+    "pose_err": 0.0,
+    "pose_points_mean": 16.77,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 0.0,
+    "shoulder_err_frames": 240,
+    "elbow_err": 0.0,
+    "elbow_err_frames": 240,
+    "wrist_err": 0.0,
+    "wrist_err_frames": 240,
+    "arm_err": 0.0,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 431,
+    "n_nohand_frames": 49,
+    "n_hand_both": 431,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     238,
+     193
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": 0.0,
+    "hand_err": 0.0,
+    "hand_err_pen": 0.0,
+    "hand_err_hs": 0.0,
+    "hand_err_hs_pen": 0.0,
+    "finger_pose_err": 0.0,
+    "finger_angle_err_deg": 0.0,
+    "hand_size_px": 34.14
+   },
+   "lmk_cached": true,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 6.3234,
+    "lse_d": 7.3422,
+    "offset_frames": -2,
+    "lse_d_at0": 12.7228,
+    "n_windows": 195,
+    "crop_px": 138.73220319938662,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 20.8,
+   "set": "gesture8",
+   "realism": {
+    "realism": 9.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show a real-looking person with natural skin, hair, clothing wrinkles, motion blur on the hands and consistent lighting. I can't see any artifacts that tell them apart.",
+      "reason_choice": "The two grids look identical to me, so I can't tell them apart and this is a guess."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show natural skin, hair, fabric and hand motion blur, with no visible artifacts, so I rated them the same.",
+      "reason_choice": "The two grids look identical to me, so I have no visible basis to separate them and this is a guess."
+     }
+    ],
+    "hands": {
+     "hands_score": 9.0,
+     "hands_score_real": 9.0,
+     "trials": [
+      {
+       "order": "gen/real",
+       "hands_gen": 9,
+       "hands_real": 9,
+       "reason": "The two images look identical. The hands show natural motion blur, correct finger counts and believable skin, nails and tattoo, so they read as real footage."
+      }
+     ]
+    }
+   }
+  },
+  "G03_P1067": {
+   "clip": "G03_P1067",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "iod_px": 61.18,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 211.06,
+    "pose_err": 0.0,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 0.0,
+    "shoulder_err_frames": 240,
+    "elbow_err": 0.0,
+    "elbow_err_frames": 240,
+    "wrist_err": 0.0,
+    "wrist_err_frames": 240,
+    "arm_err": 0.0,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 462,
+    "n_nohand_frames": 18,
+    "n_hand_both": 462,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     223,
+     239
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": 0.0,
+    "hand_err": 0.0,
+    "hand_err_pen": 0.0,
+    "hand_err_hs": 0.0,
+    "hand_err_hs_pen": 0.0,
+    "finger_pose_err": 0.0,
+    "finger_angle_err_deg": 0.0,
+    "hand_size_px": 38.92
+   },
+   "lmk_cached": true,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 5.8673,
+    "lse_d": 8.4721,
+    "offset_frames": 0,
+    "lse_d_at0": 8.4721,
+    "n_windows": 195,
+    "crop_px": 173.49008237075805,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 22.1,
+   "set": "gesture8",
+   "realism": {
+    "realism": 8.5,
+    "realism_real": 8.5,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show natural skin texture, believable hand and hair motion, and a consistent studio setup, so I can't tell them from real camera footage.",
+      "reason_choice": "The two grids look identical to me, so I can't find a visible difference and this is a guess."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show a real-looking person, with natural skin texture, hair motion blur and a consistent studio background.",
+      "reason_choice": "The two grids look identical at this resolution, so I couldn't find a visible difference and this is a guess."
+     }
+    ],
+    "hands": {
+     "hands_score": 8.0,
+     "hands_score_real": 8.0,
+     "trials": [
+      {
+       "order": "real/gen",
+       "hands_gen": 8,
+       "hands_real": 8,
+       "reason": "The two strips look identical. The hands have natural fingers, rings, nails and skin texture, and the motion blur is plausible, so they look like real footage."
+      }
+     ]
+    }
+   }
+  },
+  "G04_P0989": {
+   "clip": "G04_P0989",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "iod_px": 52.7,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 183.4,
+    "pose_err": 0.0,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 0.0,
+    "shoulder_err_frames": 240,
+    "elbow_err": 0.0,
+    "elbow_err_frames": 240,
+    "wrist_err": 0.0,
+    "wrist_err_frames": 240,
+    "arm_err": 0.0,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 479,
+    "n_nohand_frames": 1,
+    "n_hand_both": 479,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     240,
+     239
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": 0.0,
+    "hand_err": 0.0,
+    "hand_err_pen": 0.0,
+    "hand_err_hs": 0.0,
+    "hand_err_hs_pen": 0.0,
+    "finger_pose_err": 0.0,
+    "finger_angle_err_deg": 0.0,
+    "hand_size_px": 40.6
+   },
+   "lmk_cached": true,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 7.6464,
+    "lse_d": 7.4812,
+    "offset_frames": 0,
+    "lse_d_at0": 7.4812,
+    "n_windows": 195,
+    "crop_px": 154.5128217639923,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 26.1,
+   "set": "gesture8",
+   "realism": {
+    "realism": 9.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show natural camera footage: real motion blur on the hand, natural skin and fabric texture, and consistent lighting. I see no visible difference between them.",
+      "reason_choice": "The two images look identical in every frame, with no visible difference to separate real from synthetic, so this is a guess."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show natural camera footage with motion blur, believable hands and clothing, and consistent lighting, so I can't tell them apart.",
+      "reason_choice": "The two grids look identical to me, with no visible artifacts to separate them, so this is a guess."
+     }
+    ],
+    "hands": {
+     "hands_score": 8.0,
+     "hands_score_real": 8.0,
+     "trials": [
+      {
+       "order": "real/gen",
+       "hands_gen": 8,
+       "hands_real": 8,
+       "reason": "The two strips look identical. The hands have natural fingers, skin texture and motion blur, and any slight oddness is minor."
+      }
+     ]
+    }
+   }
+  },
+  "G05_P0217": {
+   "clip": "G05_P0217",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "iod_px": 53.12,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 188.95,
+    "pose_err": 0.0,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 0.0,
+    "shoulder_err_frames": 240,
+    "elbow_err": 0.0,
+    "elbow_err_frames": 240,
+    "wrist_err": 0.0,
+    "wrist_err_frames": 240,
+    "arm_err": 0.0,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 273,
+    "n_nohand_frames": 207,
+    "n_hand_both": 273,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     71,
+     202
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": 0.0,
+    "hand_err": 0.0,
+    "hand_err_pen": 0.0,
+    "hand_err_hs": 0.0,
+    "hand_err_hs_pen": 0.0,
+    "finger_pose_err": 0.0,
+    "finger_angle_err_deg": 0.0,
+    "hand_size_px": 26.11
+   },
+   "lmk_cached": true,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 5.1137,
+    "lse_d": 7.7723,
+    "offset_frames": 0,
+    "lse_d_at0": 7.7723,
+    "n_windows": 195,
+    "crop_px": 161.0190267505646,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 22.0,
+   "set": "gesture8",
+   "realism": {
+    "realism": 8.5,
+    "realism_real": 8.5,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 8,
+      "realism_real": 8,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show natural camera footage, with believable curly hair, fabric texture and gesture, and I can't see any difference between them.",
+      "reason_choice": "The two grids look identical to me, so I couldn't find any visible difference. This is a guess."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two images look identical. Both show natural skin, hair, fabric texture, lighting and gesture motion, consistent with real camera footage.",
+      "reason_choice": "The two grids look identical, so I found no visible difference to base a choice on. This is a guess."
+     }
+    ],
+    "hands": {
+     "hands_score": 8.0,
+     "hands_score_real": 8.0,
+     "trials": [
+      {
+       "order": "gen/real",
+       "hands_gen": 8,
+       "hands_real": 8,
+       "reason": "The two images look identical. The hands are natural, with believable skin, knuckles and folds. Only the last column has motion blur, which looks like real camera footage."
+      }
+     ]
+    }
+   }
+  },
+  "G06_P0370": {
+   "clip": "G06_P0370",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "iod_px": 54.09,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 186.01,
+    "pose_err": 0.0,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 0.0,
+    "shoulder_err_frames": 240,
+    "elbow_err": 0.0,
+    "elbow_err_frames": 240,
+    "wrist_err": 0.0,
+    "wrist_err_frames": 240,
+    "arm_err": 0.0,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 319,
+    "n_nohand_frames": 161,
+    "n_hand_both": 319,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     225,
+     94
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": 0.0,
+    "hand_err": 0.0,
+    "hand_err_pen": 0.0,
+    "hand_err_hs": 0.0,
+    "hand_err_hs_pen": 0.0,
+    "finger_pose_err": 0.0,
+    "finger_angle_err_deg": 0.0,
+    "hand_size_px": 43.92
+   },
+   "lmk_cached": true,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 2.2878,
+    "lse_d": 11.0481,
+    "offset_frames": -2,
+    "lse_d_at0": 13.0647,
+    "n_windows": 195,
+    "crop_px": 169.04478352546693,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 24.3,
+   "set": "gesture8",
+   "realism": {
+    "realism": 9.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "gen/real",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Skin, fabric texture, hand motion and studio lighting all read as a real camera, and I saw no visible difference between A and B.",
+      "reason_choice": "The two grids look identical to me, so I can't see any real difference. This is a guess."
+     },
+     {
+      "order": "real/gen",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show natural skin, fabric, lighting and hand motion, and I can't see any artifacts that separate them from real camera footage.",
+      "reason_choice": "The two grids look identical, so I can't tell them apart and this is a guess."
+     }
+    ],
+    "hands": {
+     "hands_score": 7.0,
+     "hands_score_real": 7.0,
+     "trials": [
+      {
+       "order": "gen/real",
+       "hands_gen": 7,
+       "hands_real": 7,
+       "reason": "The two strips look identical. The hands are plausible, with natural fingers and nails, and only slight softness and blur from motion and compression."
+      }
+     ]
+    }
+   }
+  },
+  "G07_P1174": {
+   "clip": "G07_P1174",
+   "inputs": "ROOT/data/clips",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.0,
+    "face_nme_pen": 0.0,
+    "mouth_nme": 0.0,
+    "mouth_nme_pen": 0.0,
+    "iod_px": 48.77,
+    "mouth_open_corr": 1.0,
+    "shoulder_width_px": 191.88,
+    "pose_err": 0.0,
+    "pose_points_mean": 17.0,
+    "pose_err_pen": 0.0,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 0.0,
+    "shoulder_err_frames": 240,
+    "elbow_err": 0.0,
+    "elbow_err_frames": 240,
+    "wrist_err": 0.0,
+    "wrist_err_frames": 240,
+    "arm_err": 0.0,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 478,
+    "n_nohand_frames": 2,
+    "n_hand_both": 478,
+    "n_hand_extra": 0,
+    "n_hand_frames_slot": [
+     238,
+     240
+    ],
+    "hand_det_rate": 1.0,
+    "hand_extra_rate": 0.0,
+    "hand_err": 0.0,
+    "hand_err_pen": 0.0,
+    "hand_err_hs": 0.0,
+    "hand_err_hs_pen": 0.0,
+    "finger_pose_err": 0.0,
+    "finger_angle_err_deg": 0.0,
+    "hand_size_px": 33.08
+   },
+   "lmk_cached": true,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 8.4608,
+    "lse_d": 5.4105,
+    "offset_frames": 0,
+    "lse_d_at0": 5.4105,
+    "n_windows": 195,
+    "crop_px": 159.8671914625168,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 26.3,
+   "set": "gesture8",
+   "realism": {
+    "realism": 9.0,
+    "realism_real": 9.0,
+    "fooled_rate": 0.5,
+    "trials": [
+     {
+      "order": "real/gen",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "real",
+      "fooled": false,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical. Both show natural skin texture, believable hand gestures and motion blur, and consistent studio lighting, so both look like real camera footage.",
+      "reason_choice": "The two grids look practically identical, and I found no visible artifact that separates them, so this is a guess."
+     },
+     {
+      "order": "gen/real",
+      "realism_gen": 9,
+      "realism_real": 9,
+      "picked_as_real": "gen",
+      "fooled": true,
+      "confidence": 1,
+      "reason_realism": "The two grids look identical, and both read as real camera footage. Skin texture, shirt wrinkles, hand motion blur and lighting are natural, and I see no visible artifacts.",
+      "reason_choice": "The two grids look practically identical, and I couldn't find a reliable difference between them, so this is a guess."
+     }
+    ],
+    "hands": {
+     "hands_score": 9.0,
+     "hands_score_real": 9.0,
+     "trials": [
+      {
+       "order": "gen/real",
+       "hands_gen": 9,
+       "hands_real": 9,
+       "reason": "The two strips look identical. Hands have natural anatomy, correct finger counts, believable motion blur and skin texture, so they read as real footage."
+      }
+     ]
+    }
+   }
+  }
+ }
+}

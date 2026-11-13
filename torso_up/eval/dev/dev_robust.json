@@ -1,0 +1,183 @@
+{
+ "run": "dev_robust",
+ "dir": "$WORK/eval/dev/robust",
+ "made": "2026-11-13 10:40:37",
+ "sync_box": "mp",
+ "sync_interp": "linear",
+ "lmk": "$WORK/common/lmk.py",
+ "inputs": "ROOT/data/clips",
+ "secs_metrics": 112.6,
+ "secs_total": 112.8,
+ "failed": {
+  "M000_P0115": "ValueError: short video: {'w': 512, 'h': 640, 'fps': 30.0, 'n': 100} (need >= 230 frames at 30 fps)",
+  "M009_P0217": "empty output dev/robust/M009_P0217.mp4",
+  "M023_P0370": "missing output dev/robust/M023_P0370.mp4"
+ },
+ "mean": {
+  "n_clips": 1,
+  "n_failed": 3,
+  "syncnet": {
+   "lse_c": 7.1699,
+   "lse_d": 7.3647,
+   "offset_frames": -1.0,
+   "abs_offset_frames": 1.0,
+   "lse_d_at0": 10.6662,
+   "n": 1
+  },
+  "landmarks": {
+   "face_nme": 0.9376,
+   "mouth_nme": 0.7212,
+   "mouth_open_corr": 0.9753,
+   "det_rate": 1.0,
+   "face_nme_pen": 0.9376,
+   "mouth_nme_pen": 0.7212,
+   "pose_err": 0.6599,
+   "pose_err_pen": 0.6599,
+   "pose_det_rate": 1.0,
+   "shoulder_err": 0.5598,
+   "elbow_err": 0.957,
+   "wrist_err": 1.007,
+   "arm_err": 0.9722
+  },
+  "hands": {
+   "hand_det_rate": 0.9954,
+   "hand_err_pen": 1.606,
+   "hand_err_hs_pen": 9.3668,
+   "hand_extra_rate": 0.0476,
+   "hand_err": 1.1547,
+   "hand_err_hs": 9.2452,
+   "finger_pose_err": 5.3349,
+   "finger_angle_err_deg": 3.28,
+   "n_hand_frames": 438,
+   "n_hand_both": 436,
+   "n_hand_clips": 1
+  },
+  "realism": null
+ },
+ "mean_same12": {
+  "n_clips": 1,
+  "n_failed": 3,
+  "syncnet": {
+   "lse_c": 7.1699,
+   "lse_d": 7.3647,
+   "offset_frames": -1.0,
+   "abs_offset_frames": 1.0,
+   "lse_d_at0": 10.6662,
+   "n": 1
+  },
+  "landmarks": {
+   "face_nme": 0.9376,
+   "mouth_nme": 0.7212,
+   "mouth_open_corr": 0.9753,
+   "det_rate": 1.0,
+   "face_nme_pen": 0.9376,
+   "mouth_nme_pen": 0.7212,
+   "pose_err": 0.6599,
+   "pose_err_pen": 0.6599,
+   "pose_det_rate": 1.0,
+   "shoulder_err": 0.5598,
+   "elbow_err": 0.957,
+   "wrist_err": 1.007,
+   "arm_err": 0.9722
+  },
+  "hands": {
+   "hand_det_rate": 0.9954,
+   "hand_err_pen": 1.606,
+   "hand_err_hs_pen": 9.3668,
+   "hand_extra_rate": 0.0476,
+   "hand_err": 1.1547,
+   "hand_err_hs": 9.2452,
+   "finger_pose_err": 5.3349,
+   "finger_angle_err_deg": 3.28,
+   "n_hand_frames": 438,
+   "n_hand_both": 436,
+   "n_hand_clips": 1
+  },
+  "realism": null
+ },
+ "clips": {
+  "M000_P0115": {
+   "clip": "M000_P0115",
+   "inputs": "ROOT/data/clips",
+   "error": "ValueError: short video: {'w': 512, 'h': 640, 'fps': 30.0, 'n': 100} (need >= 230 frames at 30 fps)",
+   "trace": "Traceback (most recent call last):\n  File \"$WORK/eval/run_eval.py\", line 130, in eval_clip\n    v, note = normalize(gen, td, w, h)\n              ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"$WORK/eval/run_eval.py\", line 105, in normalize\n    if dur_frames < MIN_FRAMES - 0.5: raise ValueError(f'short video: {p} (need >= {MIN_FRAMES} frames at 30 fps)')\n                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: short video: {'w': 512, 'h': 640, 'fps': 30.0, 'n': 100} (need >= 230 frames at 30 fps)\n",
+   "secs": 0.0,
+   "set": "same12"
+  },
+  "M001_P0115": {
+   "clip": "M001_P0115",
+   "inputs": "ROOT/data/clips",
+   "normalized": "normalized from {'w': 384, 'h': 480, 'fps': 25.0, 'n': 200}",
+   "landmarks": {
+    "frames": 240,
+    "frames_gen": 240,
+    "cond_face_frames": 240,
+    "det_rate": 1.0,
+    "face_nme": 0.9376,
+    "face_nme_pen": 0.9376,
+    "mouth_nme": 0.7212,
+    "mouth_nme_pen": 0.7212,
+    "iod_px": 52.83,
+    "mouth_open_corr": 0.9753,
+    "shoulder_width_px": 173.68,
+    "pose_err": 0.6599,
+    "pose_points_mean": 16.9,
+    "pose_err_pen": 0.6599,
+    "pose_det_rate": 1.0,
+    "shoulder_err": 0.5598,
+    "shoulder_err_frames": 240,
+    "elbow_err": 0.957,
+    "elbow_err_frames": 240,
+    "wrist_err": 1.007,
+    "wrist_err_frames": 240,
+    "arm_err": 0.9722,
+    "arm_err_frames": 240,
+    "hands_available": true,
+    "n_hand_frames": 438,
+    "n_nohand_frames": 42,
+    "n_hand_both": 436,
+    "n_hand_extra": 2,
+    "n_hand_frames_slot": [
+     229,
+     209
+    ],
+    "hand_det_rate": 0.9954,
+    "hand_extra_rate": 0.0476,
+    "hand_err": 1.1547,
+    "hand_err_pen": 1.606,
+    "hand_err_hs": 9.2452,
+    "hand_err_hs_pen": 9.3668,
+    "finger_pose_err": 5.3349,
+    "finger_angle_err_deg": 3.28,
+    "hand_size_px": 33.65
+   },
+   "lmk_cached": false,
+   "lmk": "torso_up/common/lmk.py",
+   "syncnet": {
+    "lse_c": 7.1699,
+    "lse_d": 7.3647,
+    "offset_frames": -1,
+    "lse_d_at0": 10.6662,
+    "n_windows": 195,
+    "crop_px": 156.1400448951721,
+    "interp": "linear",
+    "box": "mp"
+   },
+   "sync_cached": false,
+   "secs": 112.1,
+   "set": "same12"
+  },
+  "M009_P0217": {
+   "clip": "M009_P0217",
+   "error": "empty output dev/robust/M009_P0217.mp4",
+   "secs": 0,
+   "set": "same12"
+  },
+  "M023_P0370": {
+   "clip": "M023_P0370",
+   "error": "missing output dev/robust/M023_P0370.mp4",
+   "secs": 0,
+   "set": "same12"
+  }
+ }
+}

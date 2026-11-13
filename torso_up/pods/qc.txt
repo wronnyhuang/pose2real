@@ -1,0 +1,3 @@
+t_v2 60 --bs 4 --ckpt --audio win --au_la -1 --refbase --w_lips 3
+t_v3_seen 45 --bs 4 --ckpt --audio win --au_la -1 --refbase --w_lips 3 --resume /root/runs/t_v2/last.pt --splits train,heldout_ref --boost 8 --gan_start 300
+t_hand_gan 45 --bs 4 --ckpt --hand_gan
